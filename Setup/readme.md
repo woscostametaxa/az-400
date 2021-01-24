@@ -9,9 +9,9 @@ Script `create-lab-vm.azcli`:
 ```bash
 rnd=$RANDOM
 loc=westeurope
-grp=az204-lab
+grp=az-lab
 vmname=labvm-$rnd
-user=az204lab
+user=azlabadmin
 pwd=Lab@dmin1233
 
 az group create -n $grp -l $loc
@@ -22,7 +22,7 @@ az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --i
 > Note: You could also execute `create-lab-vm.sh` or run the following remote script in Cloud Shell
 
 ```bash
-curl https://raw.githubusercontent.com/ARambazamba/AZ-400/master/Labs/Setup/create-lab-vm.sh | bash
+curl https://raw.githubusercontent.com/ARambazamba/az-400-v2/master/Labs/Setup/create-lab-vm.sh | bash
 ```
 
 ![create-labvm](_images/create-lab-vm.jpg)
@@ -31,7 +31,7 @@ curl https://raw.githubusercontent.com/ARambazamba/AZ-400/master/Labs/Setup/crea
 
 ## Connect to VM & Install Software
 
-Go to Ressource Group `az204-lab` and connect to VM using RDP and the credentials that you have used in the script:
+Go to Ressource Group `az-lab` and connect to VM using RDP and the credentials that you have used in the script:
 
 ![connect-rdp](_images/connect-rdp.jpg)
 
@@ -43,7 +43,7 @@ To install Software run the script `setup-az-400.ps1` from an elevated PowerShel
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-400/master/Labs/Setup/setup-az-400.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/az-400-v2/master/Labs/Setup/setup-az-400.ps1'))
 ```
 
 ## Fork & Clone Class Repo and set Github requirements
@@ -55,7 +55,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@yourdomain.com"
 ```
 
-Go to `https://github.com/ARambazamba/az-204` and fork the repo
+Go to `https://github.com/ARambazamba/az-400-v2` and fork the repo
 
 ![forking-wf](_images/fork.jpg)
 
