@@ -3,7 +3,7 @@
 
 rnd=$RANDOM
 grp=az400-containers-$rnd
-acr=az400-containers$rnd
+acr=az400containers$rnd
 
 az group create -n $grp -l westeurope
 

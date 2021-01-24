@@ -1,5 +1,5 @@
 # Update this script with the ACR from the prev demo
-acr=integrationsonline.azurecr.io
+acr=az400containers$rnd
 
 az acr login --name $acr
 az acr list --query "[].loginServer" -o tsv
