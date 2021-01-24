@@ -1,0 +1,28 @@
+# Create a Container Registry instance 
+# Execute on WSL
+
+rnd=$RANDOM
+grp=az400-containers-$rnd
+acr=az400-containers$rnd
+
+az group create -n $grp -l westeurope
+
+az acr create -g $grp --name $acr --sku Basic
+
+# Login to Container Registry & get loginServer
+
+az acr login --name $acr
+az acr list --query "[].loginServer" -o tsv
+
+# Tag img & upload to ACR
+
+az acr update --name $acr --admin-enabled true
+az acr credential show -n $acr --query "passwords[0].value"
+
+# Upload Images
+
+docker tag skills-api $acr.azurecr.io/skills-api:1.0.0
+docker push $acr.azurecr.io/skills-api:1.0.0
+
+docker tag skills-app $acr.azurecr.io/skills-app:1.0.0
+docker push $acr.azurecr.io/skills-app:1.0.0
