@@ -11,7 +11,7 @@ Companion Demo Material for Class Delivery by [Alexander Pajer](https://www.inte
 
 Exam:
 
-[Exam AZ-204: Developing Solutions for Microsoft Azure](https://docs.microsoft.com/en-us/learn/certifications/exams/az-400)
+[Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/en-us/learn/certifications/exams/az-400)
 
 ## Required Cloud Ressources
 
