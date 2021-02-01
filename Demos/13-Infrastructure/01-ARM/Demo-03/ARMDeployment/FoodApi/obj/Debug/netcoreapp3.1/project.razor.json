@@ -1,5 +1,5 @@
 {
-  "FilePath": "h:\\Classes\\AZ-400\\T05\\01 Infrastructure and Configuration Azure Tools\\Demo-04\\ARMDeployment\\FoodApi\\FoodApi.csproj",
+  "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\13-Infrastructure\\01-ARM\\Demo-03\\ARMDeployment\\FoodApi\\FoodApi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14387,7 +14387,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 900
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "FoodApi",
   "Documents": [],
