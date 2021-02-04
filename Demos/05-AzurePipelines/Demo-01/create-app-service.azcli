@@ -1,7 +1,7 @@
 rnd=$RANDOM
-grp=az400-t01-corewebapp-$rnd
-appPlan=corewebappplan-$rnd
-web=corewebapp-$rnd
+grp=az400-m05-$rnd
+appPlan=food-$rnd
+web=foodapi-$rnd
 loc=westeurope
 
 # create a resource group
@@ -16,7 +16,3 @@ az webapp create -n $web -g $grp --plan $appPlan
 # print out the FQDN for the Web App
 echo "Use this number for your Deploy Pipeline: $rnd"
 echo "Web Url: http://$web.azurewebsites.net"
-
-# cleanup after demo
-
-# az group delete -n $grp -y --no-wait

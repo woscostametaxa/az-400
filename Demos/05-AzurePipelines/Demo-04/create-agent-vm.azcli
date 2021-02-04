@@ -1,0 +1,10 @@
+rnd=$RANDOM
+loc=westeurope
+grp=az400-m05-$rnd
+vmname=devops-agent-$rnd
+user=az400admin
+pwd=TiTp4@dmin12334!
+
+az group create -n $grp -l $loc
+
+az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image Win2019Datacenter --size Standard_B2ms

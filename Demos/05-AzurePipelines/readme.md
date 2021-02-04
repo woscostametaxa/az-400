@@ -20,6 +20,8 @@ az extension add --name azure-devops
 
 [Pipeline Jobs](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#define-a-single-job)
 
+[Azure Pipelines Ecosystem Support](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/ecosystems?view=azure-devops)
+
 ## Extensions & Tools
 
 [Azure DevOps Pipelines - VS Code Extensions](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)

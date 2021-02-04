@@ -1,6 +1,6 @@
 # .NET Core Build
 
-- Requires [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- Requires [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - Show Build pipeline with designer and yaml
 - Show simple release just to prove that is works
 

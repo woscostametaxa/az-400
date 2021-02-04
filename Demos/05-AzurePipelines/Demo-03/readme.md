@@ -1,4 +1,4 @@
 # Use Github Service Connection
 
-- Show AZ-400-T01-Github
+- Show https://github.com/ARambazamba/FoodApp
 - Explain Github Service Connection
