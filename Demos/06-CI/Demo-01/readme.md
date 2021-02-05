@@ -1,23 +1,13 @@
-# Angular Build
+# .NET Core Build
+
+[FoodApp](https://github.com/ARambazamba/FoodApp) is an external 2-tier App (.NET Core Api / Angular UI) hosted in a Monorepo
 
 ## Scaffolding & Basics
-
-Requires [Node 10+](https://nodejs.org/en/download/releases/) and Angular
-
-```
-npm i -g @angular/cli
-```
-
-Create proj:
-
-```
-ng new ngBuild
-ng s -o
-```
 
 Manual Build:
 
 ```
-npm i
-ng build --prod
+dotnet restore
+dotnet build
+dotnet publish
 ```

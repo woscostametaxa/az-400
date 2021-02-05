@@ -1,27 +1,23 @@
-# SharePoint Framework Build
+# Angular Build
 
 ## Scaffolding & Basics
 
-SPFx (SharePoint Framework) requires [Node 10+](https://nodejs.org/en/download/releases/), Yeoman, Gulp, SPFx Generator SharePoint
+Requires [Node 10+](https://nodejs.org/en/download/releases/) and Angular
 
 ```
-npm i -g yo gulp @microsoft/generator-sharepoint
+npm i -g @angular/cli
 ```
-
-> Note: Detailed Instructions for Env Setup [here](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
 Create proj:
 
 ```
-yo @microsoft/sharepoint
+ng new ngBuild
+ng s -o
 ```
 
 Manual Build:
 
 ```
 npm i
-gulp bundle
-gulp package-solution
+ng build --prod
 ```
-
-> Note: You might have to switch to node version 10.x
