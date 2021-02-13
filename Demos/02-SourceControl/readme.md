@@ -20,6 +20,8 @@
 
 # Git / Github Essentials
 
+# Git / Github Essentials
+
 ## Configuration
 
 Set User and E-Mail
@@ -211,11 +213,11 @@ Pull / Push from / to repository:
 git pull / git push
 ```
 
-## Refresh from Upstream
+## Forking Workflow - Getting Updates for Class Demos
 
-> Note: You can use this guide to refresh changes I made during the week to your forked repo
+![forking-wf](_images/forking-workflow.jpg)
 
-Original Repo could be: `https://github.com/ARambazamba/AdvancedAngularDevelopment` where `ARambazamba` is the `original-owner-github-username` and `AdvancedAngularDevelopment` is the `reponame`
+Original Repo could be: `https://github.com/ARambazamba/AZ-204` where `ARambazamba` is the `original-owner-github-username` and `AZ-204` is the `reponame`
 
 ### Listing the current Remotes
 
@@ -254,6 +256,23 @@ Fetch from Upstream:
  git merge upstream/master
  git push origin master
 ```
+
+## Working with Submodules
+
+Add a Submodule:
+
+```
+git submodule add https://github.com/ARambazamba/FoodApp FoodApp
+git commit -m foodapp-submodule
+```
+
+Updating a Submodule to it's latest commit:
+
+```
+git submodule update --remote --merge
+```
+
+> Note: I use submodules to include samples in classes that are used in different classes or to shorten / avoid path problems in devops
 
 ## Git-flow
 

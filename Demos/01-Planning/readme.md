@@ -8,6 +8,8 @@
 
 [Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview)
 
+[Pester](https://pester.dev/)
+
 # Lab
 
 [Choose an Agile approach to software development](https://docs.microsoft.com/en-us/learn/modules/choose-an-agile-approach/)
