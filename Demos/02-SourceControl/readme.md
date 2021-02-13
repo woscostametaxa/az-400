@@ -1,5 +1,11 @@
 # Getting Started with Source Control
 
+[Git Documentation](https://git-scm.com/docs)
+
+[Import repositories from TFVC to Git](https://docs.microsoft.com/en-us/azure/devops/repos/git/import-from-TFVC?view=azure-devops)
+
+## Extensions & Tools
+
 [Git Bash Download](https://git-scm.com/downloads)
 
 [Git Extensions for Windows](https://sourceforge.net/projects/gitextensions/)
@@ -8,17 +14,11 @@
 
 [Git History Diff](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
 
-## Labs
-
-[Version Controlling with Git in Azure Repos - Exercises 1 - 5](https://www.azuredevopslabs.com/labs/azuredevops/git/)
-
-## Learning Labs:
+## Additional Labs & Walkthroughs
 
 [Introduction to Git](https://docs.microsoft.com/en-us/learn/modules/intro-to-git/)
 
 [Learning Path - Introduction to version control with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/)
-
-# Git / Github Essentials
 
 # Git / Github Essentials
 
@@ -196,122 +196,3 @@ git checkout 2.0.1
 ## Configure ignored files
 
 To Configure ignored files add a `.gitignore` file to the root of your project. A valid `.gitignore` file can be generated at https://www.gitignore.io/
-
-## Remotes
-
-A Remote is a GIT Repo on a Git Server, typically in the cloud, like GitHub.
-
-Adding Remotes:
-
-```
-git remote add origin https://github.com/try-git/try_git.git
-```
-
-Pull / Push from / to repository:
-
-```
-git pull / git push
-```
-
-## Forking Workflow - Getting Updates for Class Demos
-
-![forking-wf](_images/forking-workflow.jpg)
-
-Original Repo could be: `https://github.com/ARambazamba/AZ-204` where `ARambazamba` is the `original-owner-github-username` and `AZ-204` is the `reponame`
-
-### Listing the current Remotes
-
-List the current configured remote repository for your fork.
-
-```
-git remote -v
-> origin  https://github.com/your-github-username/reponame.git (fetch)
-> origin  https://github.com/your-github-username/reponame.git (push)
-```
-
-Specify a new remote upstream repository that will be synced with the fork.
-
-### Adding the Repo of the original owner as Upstream
-
-```
-git remote add upstream https://github.com/original-owner-github-username/reponame.git
-```
-
-Verify the new upstream repository you've specified for your fork.
-
-```
-git remote -v
-> origin    https://github.com/your-github-username/reponame.git (fetch)
-> origin    https://github.com/your-github-username/reponame.git (push)
-> upstream  https://github.com/original-owner-github-username/reponame.git (fetch)
-> upstream  https://github.com/original-owner-github-username/reponame.git (push)
-```
-
-### Getting Updates
-
-Fetch from Upstream:
-
-```
- git fetch upstream
- git merge upstream/master
- git push origin master
-```
-
-## Working with Submodules
-
-Add a Submodule:
-
-```
-git submodule add https://github.com/ARambazamba/FoodApp FoodApp
-git commit -m foodapp-submodule
-```
-
-Updating a Submodule to it's latest commit:
-
-```
-git submodule update --remote --merge
-```
-
-> Note: I use submodules to include samples in classes that are used in different classes or to shorten / avoid path problems in devops
-
-## Git-flow
-
-[Gitflow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
-
-> Note: Require GIT 2.24.0+ - Check with `git --version`
-
-Initialize repo for gitflow:
-
-```
-git flow init
-```
-
-Start a new feature:
-
-```
-git flow feature start MYFEATURE
-```
-
-Finish feature:
-
-```
-git flow feature finish MYFEATURE
-```
-
-Publish a feature:
-
-```
-git flow feature publish  MYFEATURE
-```
-
-Start a release:
-
-```
-git flow release start RELEASE
-```
-
-Finish a release:
-
-```
-git flow release finish  RELEASE
-```

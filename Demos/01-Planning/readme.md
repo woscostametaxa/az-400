@@ -10,7 +10,7 @@
 
 [Pester](https://pester.dev/)
 
-# Lab
+# Additional Labs & Walkthroughs
 
 [Choose an Agile approach to software development](https://docs.microsoft.com/en-us/learn/modules/choose-an-agile-approach/)
 

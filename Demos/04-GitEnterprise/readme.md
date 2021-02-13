@@ -4,38 +4,130 @@
 
 [Git Flow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
 
-## Gitflow
+## Extensions & Tools
 
-Download Gitflow Extension:
+[Github Pull Request and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
-```
-wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | bash
-```
+[Guithub Linker](https://marketplace.visualstudio.com/items?itemName=gimenete.github-linker)
 
-### Working with Gitflow
+## Remotes
 
-List Repos in a project:
+A Remote is a GIT Repo on a Git Server, typically in the cloud, like GitHub.
 
-```
-az repos list -p "Parts Unlimited" -o table
-```
-
-Create a Feature Branch:
+Adding Remotes:
 
 ```
-git checkout -b feature/my-feature1
+git remote add origin https://github.com/try-git/try_git.git
 ```
 
-Make some change, commit & Publish the change
+Pull / Push from / to repository:
 
 ```
-git status
-git add .
-git commit -m "feature1"
-git push -u origin feature/my-feature1
+git pull / git push
 ```
 
-Create a Pull Request:
+## Forking Workflow - Getting Updates for Class Demos
+
+![forking-wf](_images/forking-workflow.jpg)
+
+Original Repo could be: `https://github.com/ARambazamba/AZ-204` where `ARambazamba` is the `original-owner-github-username` and `AZ-204` is the `reponame`
+
+### Listing the current Remotes
+
+List the current configured remote repository for your fork.
+
+```
+git remote -v
+> origin  https://github.com/your-github-username/reponame.git (fetch)
+> origin  https://github.com/your-github-username/reponame.git (push)
+```
+
+Specify a new remote upstream repository that will be synced with the fork.
+
+### Adding the Repo of the original owner as Upstream
+
+```
+git remote add upstream https://github.com/original-owner-github-username/reponame.git
+```
+
+Verify the new upstream repository you've specified for your fork.
+
+```
+git remote -v
+> origin    https://github.com/your-github-username/reponame.git (fetch)
+> origin    https://github.com/your-github-username/reponame.git (push)
+> upstream  https://github.com/original-owner-github-username/reponame.git (fetch)
+> upstream  https://github.com/original-owner-github-username/reponame.git (push)
+```
+
+### Getting Updates
+
+Fetch from Upstream:
+
+```
+ git fetch upstream
+ git merge upstream/master
+ git push origin master
+```
+
+## Working with Submodules
+
+Add a Submodule:
+
+```
+git submodule add https://github.com/ARambazamba/FoodApp FoodApp
+git commit -m foodapp-submodule
+```
+
+Updating a Submodule to it's latest commit:
+
+```
+git submodule update --remote --merge
+```
+
+> Note: I use submodules to include samples in classes that are used in different classes or to shorten / avoid path problems in devops
+
+## Git-flow
+
+[Gitflow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
+
+> Note: Require GIT 2.24.0+ - Check with `git --version`
+
+Initialize repo for gitflow:
+
+```
+git flow init
+```
+
+Start a new feature:
+
+```
+git flow feature start MYFEATURE
+```
+
+Finish feature:
+
+```
+git flow feature finish MYFEATURE
+```
+
+Publish a feature:
+
+```
+git flow feature publish  MYFEATURE
+```
+
+Start a release:
+
+```
+git flow release start RELEASE
+```
+
+Finish a release:
+
+```
+git flow release finish  RELEASE
+```
 
 ## Git Hooks
 
@@ -71,11 +163,7 @@ git push origin
 
 [GitVersion for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=gittools.gitversion)
 
-## Labs
-
-[Code Review with Pull Requests - Exercises 6 & 7](https://www.azuredevopslabs.com/labs/azuredevops/git/)
-
-## Learning Labs:
+## Additional Labs & Walkthroughs
 
 [Collaborate with Git](https://docs.microsoft.com/en-us/learn/modules/collaborate-with-git/)
 
