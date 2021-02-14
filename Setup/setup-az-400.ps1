@@ -18,6 +18,7 @@ choco install azurepowershell -y
 choco install microsoftazurestorageexplorer -y
 choco install azure-data-studio -y
 choco install postman -y
+choco install microsoft-teams -y
 
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
@@ -27,7 +28,6 @@ dotnet tool install -g Microsoft.dotnet-httprepl
 
 # Intall VS Code Extensions
 code --install-extension ms-dotnettools.csharp
-code --install-extension ms-dotnettools.csharp
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msjsdiag.debugger-for-edge
 code --install-extension ms-vscode.powershell
@@ -35,7 +35,6 @@ code --install-extension ms-vscode.azurecli
 code --install-extension ms-vscode.azure-account
 code --install-extension ms-azuretools.vscode-azureappservice
 code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-azuretools.vscode-cosmosdb
 code --install-extension ms-azuretools.vscode-azurefunctions
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension redhat.vscode-yaml
@@ -43,7 +42,13 @@ code --install-extension bencoleman.armview
 code --install-extension msazurermtools.azurerm-vscode-tools
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension mdickin.markdown-shortcuts
+code --install-extension mhutchie.git-graph 
+code --install-extension ms-azure-devops.azure-pipelines		
+code --install-extension ms-azuretools.vscode-azureterraform
 
 # Install Angular
 npx @angular/cli@latest analytics off
 npm i -g @angular/cli
+
+# Finished Msg
+Write-Host "Finished Software installation" -ForegroundColor yellow

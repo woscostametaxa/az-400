@@ -1,8 +1,3 @@
-# YAML Pipelines
-
-Add `net-core-api-build.yml` to `simple-api` repo
-
-```yml
 name: "build-simple-net-core-api-yaml"
 trigger:
   branches:
@@ -46,10 +41,3 @@ stages:
               PathtoPublish: "$(Build.ArtifactStagingDirectory)"
               ArtifactName: "drop"
               publishLocation: "Container"
-```
-
-Import the Pipeline
-
-![add-pipeline](_images/add-pipeline.jpg)
-
-![select-pipeline](_images/select-pipeline.jpg)
