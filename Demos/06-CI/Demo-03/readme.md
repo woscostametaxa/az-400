@@ -1,5 +1,7 @@
 # SharePoint Framework Build
 
+Sample SPFx repo available [here](https://github.com/ARambazamba/SPFxPipeline)
+
 ## Scaffolding & Basics
 
 SPFx (SharePoint Framework) requires [Node 10+](https://nodejs.org/en/download/releases/), Yeoman, Gulp, SPFx Generator SharePoint

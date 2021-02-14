@@ -43,7 +43,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -125,8 +124,5 @@
       }
     }
   },
-  "defaultProject": "ngBuild",
-  "cli": {
-    "analytics": "0a8cf6b8-3a29-4103-bb1b-a0a91d8a1abd"
-  }
+  "defaultProject": "ngBuild"
 }

@@ -7,19 +7,19 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'HelloDevOpsWebPartStrings';
-import HelloDevOps from './components/HelloDevOps';
-import { IHelloDevOpsProps } from './components/IHelloDevOpsProps';
+import * as strings from 'SpFxWpWebPartStrings';
+import SpFxWp from './components/SpFxWp';
+import { ISpFxWpProps } from './components/ISpFxWpProps';
 
-export interface IHelloDevOpsWebPartProps {
+export interface ISpFxWpWebPartProps {
   description: string;
 }
 
-export default class HelloDevOpsWebPart extends BaseClientSideWebPart <IHelloDevOpsWebPartProps> {
+export default class SpFxWpWebPart extends BaseClientSideWebPart<ISpFxWpWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IHelloDevOpsProps> = React.createElement(
-      HelloDevOps,
+    const element: React.ReactElement<ISpFxWpProps> = React.createElement(
+      SpFxWp,
       {
         description: this.properties.description
       }
