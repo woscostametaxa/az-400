@@ -2,4 +2,4 @@
 
 - Show https://github.com/ARambazamba/FoodApp
 - Explain Github Service Connection
-- Import `food-api-build.yaml` as a build pipeline
+- Import `food-api-simple-build.yaml` as a build pipeline
