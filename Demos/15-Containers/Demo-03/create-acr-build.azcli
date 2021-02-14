@@ -1,4 +1,7 @@
-# Update this script with the ACR from the prev demo
+# Update rnd from prev script - run from folder node-frontend
+rnd=12768
+grp=az400-containers-$rnd
+loc=westeurope
 acr=az400containers$rnd
 
 az acr login --name $acr
