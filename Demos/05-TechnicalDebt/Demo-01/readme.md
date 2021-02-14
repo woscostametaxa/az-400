@@ -1,3 +1,3 @@
 # Sonar Cloud
 
-//TODO: Implement Sonar Cloud Exampel
+//TODO: Implement Sonar Cloud Example
