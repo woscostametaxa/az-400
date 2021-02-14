@@ -5,7 +5,7 @@
 ```
 rnd=$RANDOM
 loc=westeurope
-grp=az400-deploy-arm-$rnd
+grp=az204-deploy-arm-$rnd
 acctname=armstorage$rnd
 ```
 
@@ -23,5 +23,5 @@ az deployment group create -g $grp -n rollout1  --template-file azuredeploy.json
 [Try this template](https://azure.microsoft.com/de-de/resources/templates/201-encrypt-running-windows-vm/)
 
 ```
-az deployment group create -g az400-git-$RANDOm -n winVM --template-uri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm/azuredeploy.json
+az deployment group create -g az204-git-$RANDOm -n winVM --template-uri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm/azuredeploy.json
 ```
