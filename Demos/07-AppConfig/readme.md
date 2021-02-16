@@ -1,11 +1,23 @@
-# 04 Managing Application Config and Secrets
+# Secure Data Solutions
 
-[Microsoft Threat Modeling Tool Overview](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-feature-overview)
+[Azure Key Vault](https://docs.microsoft.com/de-de/azure/key-vault/general/)
 
-[Microsoft Threat Modelling Tool Download](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+[Azure Managed Idntieites](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/)
 
-[Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview)
+[Azure App Config](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview)
 
-## Learning Labs
+## CLI Reference
 
-[Quickstart: Create an ASP.NET Core app with Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspnet-core-app)
+[az keyvault](https://docs.microsoft.com/en-us/cli/azure/keyvault?view=azure-cli-latest)
+
+[az identity](https://docs.microsoft.com/en-us/cli/azure/identity?view=azure-cli-latest)
+
+[az appconfig](https://docs.microsoft.com/en-us/cli/azure/appconfig?view=azure-cli-latest)
+
+## Additional Labs & Walkthroughs
+
+[Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/en-us/learn/modules/manage-secrets-with-azure-key-vault/)
+
+[Authenticate apps to Azure services by using service principals and managed identities for Azure resources](https://docs.microsoft.com/en-us/learn/modules/authenticate-apps-with-managed-identities/)
+
+[Quickstart: Create an ASP.NET Core app with Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspnet-core-app?tabs=core2x)
