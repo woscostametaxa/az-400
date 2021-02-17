@@ -111,7 +111,7 @@
               "definitionType": "task"
             },
             "inputs": {
-              "PathtoPublish": "dist/ngBuild",
+              "PathtoPublish": "dist/SimpleAngular",
               "ArtifactName": "drop",
               "ArtifactType": "Container",
               "TargetPath": "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)",
