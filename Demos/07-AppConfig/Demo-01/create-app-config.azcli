@@ -1,0 +1,29 @@
+rnd=020
+grp=foodapp
+loc=westeurope
+cfg=foodconfig-$rnd
+vault=foodvault-$rnd
+principal=http://foodprincipal
+feature=ScanFeature
+
+# create appconfig and add a value
+
+az group create -n $grp -l $loc
+
+az appconfig create -g $grp -n $cfg -l $loc --sku free
+
+az appconfig kv set -n foodconfig-$rnd --key "Settings:Title" --value "Food App" -y
+
+az appconfig kv set-keyvault -n $cfg --key "Settings:ConnectionString" --secret-identifier "https://$vault.vault.azure.net/Secrets/DBConnection" -y
+
+# create a feature flag and turn it on
+
+az appconfig feature set -n $cfg --feature $feature -y
+
+az appconfig feature enable -n $cfg --feature $feature -y
+
+# create a service principal & assign permissions on keyvault
+
+az ad sp create-for-rbac -n $principal --sdk-auth
+
+az keyvault set-policy -n $vault --spn $principal --secret-permissions get list set
