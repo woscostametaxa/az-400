@@ -1,8 +1,6 @@
 # Labs
 
-[Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/)
-
-Lab Guides for the modules can be found [here](guides/)
+Lab Guides for the modules can be found in the [/guides](guides/) folder. Some labs use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/)
 
 > Note: For better reading experience I recommend reading the lab guides using the browser
 
