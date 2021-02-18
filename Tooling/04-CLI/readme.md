@@ -67,7 +67,9 @@ az extension list-available --output table
 az extension add --name <extension-name>
 ```
 
-### Create an App Service to host a Web App:
+### CLI Examples
+
+#### Create an App Service to host a Web App:
 
 ```bash
 rnd=$RANDOM
@@ -89,7 +91,7 @@ az appservice plan create -n $appPlan -g $grp --sku B2
 curl https://raw.githubusercontent.com/ARambazamba/AZ-204/master/Labs/create-lab-vm.sh | bash
 ```
 
-### Create a Lab VM
+#### Create a Lab VM
 
 If you want to execute the labs on a machine where you have full controll please follow this guide:
 
@@ -116,7 +118,7 @@ az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --i
 
 > Note: We are using this image and vm size because it supports nested virtualization
 
-## Troubleshoot CLI
+### Troubleshoot CLI
 
 Select Directory:
 
