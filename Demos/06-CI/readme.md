@@ -1,5 +1,16 @@
 # Implementing Continuous Integration in an Azure DevOps Pipeline
 
+## Demos
+
+- .NET Core Build
+- .Angular Build
+- SPFx Build
+- Monorepo with Vars and PathTrigger
+- Multistage Build Test
+- Multistage with Template Yaml
+
+## Readings
+
 [Build Options](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/options?view=azure-devops&tabs=yaml)
 
 [Configure run or build numbers](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml)
@@ -16,7 +27,7 @@
 
 [Azure Pipeline YAML Schema Reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema)
 
-# Lab
+## Lab
 
 [Enabling Continuous Integration with Azure Pipelines](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/)
 
