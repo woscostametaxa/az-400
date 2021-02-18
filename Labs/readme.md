@@ -2,7 +2,9 @@
 
 [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/)
 
-> Note: For better reading experience I recommend reading the lab guides using the browser. Example: https://github.com/ARambazamba/AZ-400-V2/blob/main/Labs/AZ400_M01_Agile_Planning_and_Portfolio_Management_with_Azure_Boards.md
+Lab Guides for the modules can be found [here](guides/)
+
+> Note: For better reading experience I recommend reading the lab guides using the browser
 
 # Lab Envirionment
 
