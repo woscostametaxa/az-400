@@ -1,5 +1,9 @@
 # 01 Infrastructure and Configuration Azure Tools
 
+## Demos
+
+## Readings
+
 [ARM Template Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/)
 
 [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
@@ -26,31 +30,6 @@
 az extension list-available --output table
 az extension add --name <extension-name>
 ```
-
-## Azure Powershell
-
-```bash
-Install-Module -Name PowerShellGet -Force
-Install-Module -Name Az -AllowClobber -Scope CurrentUser
-```
-
-Example: Create VM in Cloud Shell:
-
-```bash
-New-AzResourceGroup -Name "myResourceGroup" -Location EastUS
-
-New-AzVm `
- -ResourceGroupName "myResourceGroup" `
- -Name "myVM" `
- -Location "East US" `
- -VirtualNetworkName "myVnet" `
- -SubnetName "mySubnet" `
- -SecurityGroupName "myNetworkSecurityGroup" `
- -PublicIpAddressName "myPublicIpAddress" `
- -OpenPorts 80,3389
-```
-
-> Note: To reset CloudShell you can use `Dismount-Clouddrive`
 
 # Labs
 
