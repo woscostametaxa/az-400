@@ -1,10 +1,10 @@
 rnd=$RANDOM
 grp=az400-m015-$rnd
 appPlan=m015$rnd
-app=foodui-$rnd
+app=foodapi-$rnd
 
 az group create --name $grp --location westeurope
 
 az appservice plan create --name $appPlan -g $grp --sku B2 --is-linux --number-of-workers 1
 
-az webapp create -g $grp -p $appPlan -n $app -i arambazamba/foodui
+az webapp create -g $grp -p $appPlan -n $app -i arambazamba/foodservice

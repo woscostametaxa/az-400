@@ -1,6 +1,6 @@
 rnd=$RANDOM
 loc=westeurope
-grp=az400-m05-$rnd
+grp=az400-m04-$rnd
 vmname=devops-agent-$rnd
 user=az400admin
 pwd=TiTp4@dmin12334!

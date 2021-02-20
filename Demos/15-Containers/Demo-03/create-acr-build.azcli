@@ -1,6 +1,6 @@
 # Update rnd from prev script - run from folder node-frontend
 rnd=12768
-grp=az400-containers-$rnd
+grp=az400-m015-$rnd
 loc=westeurope
 acr=az400containers$rnd
 

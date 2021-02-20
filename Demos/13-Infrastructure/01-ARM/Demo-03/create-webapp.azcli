@@ -1,5 +1,5 @@
 rnd=$RANDOM
-grp=az400-t05-arm-$rnd
+grp=az400-m13-arm-$rnd
 appPlan=arm-$rnd
 web=mvc-arm-$rnd
 loc=westeurope

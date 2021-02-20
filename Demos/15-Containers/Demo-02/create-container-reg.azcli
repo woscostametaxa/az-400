@@ -1,7 +1,7 @@
 rnd=$RANDOM
-grp=az400-containers-$rnd
+grp=az400-m015-$rnd
 loc=westeurope
-acr=az400containers$rnd
+acr=az400m015$rnd
 
 az group create -n $grp -l $loc
 

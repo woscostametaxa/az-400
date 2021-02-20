@@ -7,7 +7,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "az400-t05-terraform" {
-    name = "az400-t05-terraform"
+    name = "az400-m014-terraform"
     location = "westeurope"
 }
 

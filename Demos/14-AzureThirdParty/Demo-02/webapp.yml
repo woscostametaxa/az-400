@@ -1,7 +1,7 @@
 - hosts: localhost
   connection: local
   vars:
-    resource_group: az400-t05-ansible
+    resource_group: az400-m014-ansible
     webapp_name: ansibleWebApp-1234
     plan_name: ansiblePlan
     location: westeurope

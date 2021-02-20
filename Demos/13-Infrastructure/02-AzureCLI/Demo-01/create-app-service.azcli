@@ -1,5 +1,5 @@
 rnd=$RANDOM
-grp=az400-t01-simpledeploy-$rnd
+grp=az400-m13-simpledeploy-$rnd
 appPlan=simpledeploy-$rnd
 web=mvc-simpledeploy-$rnd
 loc=westeurope
