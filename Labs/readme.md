@@ -10,8 +10,8 @@ Lab Guides for the modules can be found in the [/guides](guides/) folder. Some l
 - An Azure hosted virtual Azure Windows VM with scriptend Installation
 - [GitHub Codespaces Preview](https://github.com/features/codespaces)
 - Hosted Lab Envirionments from your Learning Provider:
-  - [Microsoft](00-LOD/),
-  - [Lab on Demand](00-LOD/),
+  - [Microsoft](00-MSLOD/),
+  - [Lab on Demand](00-MSLOD/),
   - [FastLane Remote Labs](00-Flane/)
 
 ### Azure hosted virtual Azure Windows VM Setup
