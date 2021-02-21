@@ -1,5 +1,7 @@
 # Implement & Manage Build Infrastructure
 
+> Note: Originally this is Module 05
+
 [az devops](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/?view=azure-cli-latest)
 
 [az devops admin](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops?view=azure-cli-latest)
