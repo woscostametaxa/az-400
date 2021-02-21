@@ -1,0 +1,25 @@
+rnd=$RANDOM
+grp=az400-T03-bluegreen-$rnd
+loc=westeurope
+appPlanTest=bluegreenB1-$rnd
+appPlanProd=bluegreenP1V2-$rnd
+web=space-game-$rnd
+
+echo "random number generated: $rnd"
+
+az group create -n $grp -l $loc
+
+az appservice plan create -n $appPlanTest -g $grp --sku B1
+
+az appservice plan create -n $appPlanProd -g $grp --sku P1V2
+
+az webapp create -n $web-dev -g $grp -p $appPlanTest
+
+az webapp create -n $web-test -g $grp -p $appPlanTest
+
+az webapp create -n $web-staging -g $grp -p $appPlanProd
+
+# Deploy the app
+
+az webapp deployment slot create -n  $web-staging -g $grp --slot swap
+

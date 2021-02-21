@@ -12,7 +12,7 @@
 
 [Cloud Init](https://cloud-init.io/)
 
-## Lab
+## Additional Labs & Walkthroughs
 
 [Configure infrastructure in Azure Pipelines with Ansible](https://docs.microsoft.com/en-us/learn/modules/configure-infrastructure-azure-pipelines/)
 

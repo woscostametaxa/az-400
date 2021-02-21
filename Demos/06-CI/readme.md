@@ -27,14 +27,14 @@
 
 [Azure Pipeline YAML Schema Reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema)
 
-## Lab
+[Stages in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)
 
-[Enabling Continuous Integration with Azure Pipelines](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/)
-
-[Integrating Jenkins CI with Azure Pipelines ](https://www.azuredevopslabs.com/labs/vstsextend/jenkins/)
-
-## Learning Labs
+## Additional Labs & Walkthroughs
 
 [Learning Path - Build applications with Azure DevOps](https://docs.microsoft.com/en-us/learn/paths/build-applications-with-azure-devops/)
 
 [Deploy from GitHub to Azure App Service using Jenkins](https://docs.microsoft.com/de-de/azure/developer/jenkins/deploy-from-github-to-azure-app-service)
+
+[Enabling Continuous Integration with Azure Pipelines](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/)
+
+[Integrating Jenkins CI with Azure Pipelines ](https://www.azuredevopslabs.com/labs/vstsextend/jenkins/)

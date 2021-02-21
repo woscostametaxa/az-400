@@ -10,6 +10,6 @@
 
 [Understand the structure and syntax of Azure Resource Manager templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax)
 
-## Learning Labs
+## Additional Labs & Walkthroughs
 
 [Build Azure Resource Manager templates](https://docs.microsoft.com/en-us/learn/modules/build-azure-vm-templates/)

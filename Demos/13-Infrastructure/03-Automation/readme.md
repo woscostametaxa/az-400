@@ -8,7 +8,9 @@
 
 [Configure DSC for Linux](https://docs.microsoft.com/en-us/powershell/scripting/dsc/getting-started/lnxgettingstarted?view=powershell-7)
 
-## Labs
+## Additional Labs & Walkthroughs
+
+[Protect your virtual machine settings with Azure Automation State Configuration](https://docs.microsoft.com/en-us/learn/modules/protect-vm-settings-with-dsc/)
 
 [Walkthrough - Azure Automation - Create a Runbook](https://docs.microsoft.com/en-us/azure/automation/automation-quickstart-create-runbook)
 
@@ -17,7 +19,3 @@
 [Azure Automation Runbook Deployments](http://microsoft.github.io/PartsUnlimited/iac/200.2x-IaCM01AzureAuto.html)
 
 [Azure Automation with DSC](http://microsoft.github.io/PartsUnlimited/iac/200.2x-IaCLabsM02DSC.html)
-
-## Learning Labs
-
-[Protect your virtual machine settings with Azure Automation State Configuration](https://docs.microsoft.com/en-us/learn/modules/protect-vm-settings-with-dsc/)
