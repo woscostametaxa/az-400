@@ -1,4 +1,4 @@
-# Lab on Demand
+# Microsoft Enterprise Skills Initiative - Lab on Demand
 
 Go to [Lab on Demand Sign in](https://esi.learnondemand.net/)
 
