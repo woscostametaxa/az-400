@@ -255,6 +255,8 @@ Fetch from Upstream:
  git push origin master
 ```
 
+> Note: The branch you are pulling cloud also be `main` instead of `master`
+
 ## Working with Submodules
 
 Add a Submodule:
