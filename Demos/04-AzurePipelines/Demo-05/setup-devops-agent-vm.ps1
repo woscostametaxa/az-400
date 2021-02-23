@@ -15,7 +15,7 @@ function InstallWebserver{
 Disable-InternetExplorerESC
 InstallWebserver
 
-# Install Chcolatey
+# Install Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; 
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -24,10 +24,10 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 choco install microsoft-edge -y
 choco install googlechrome -y
 choco install vscode -y
-choco install dotnetcore-sdk -y
-choco install dotnet-5.0-sdk -y
 choco install git -y
 choco install azure-cli -y
+choco install dotnetcore-sdk -y
+choco install dotnet-5.0-sdk -y
 
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")

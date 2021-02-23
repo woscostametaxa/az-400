@@ -16,3 +16,7 @@ Sign In -> Go to Classes and serach for your Class.
 Select your class
 
 ![lods-select-class](_images/lods-select-class.jpg)
+
+Get your Azure Pass Code:
+
+![get-azpass-code](_images/get-azpass-code.jpg)
