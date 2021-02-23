@@ -1,3 +1,3 @@
 # Whitsource Bolt
 
-//TODO: Implement Whitsource Bolt Example
+Sample uses `api-whitesource.yml` from [FoodApp](https://github.com/ARambazamba/foodapp)

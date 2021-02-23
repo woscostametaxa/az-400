@@ -1,3 +1,3 @@
 # Sonar Cloud
 
-//TODO: Implement Sonar Cloud Example
+Sample uses `api-sonarcloud.yml` from [FoodApp](https://github.com/ARambazamba/foodapp)
