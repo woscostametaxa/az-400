@@ -1,3 +1,5 @@
 # Blue Green
 
-- Show Candence Pipeline
+- Show Blue Green Pipeline
+- Show Blue Green Pipeline with Approval
+- Show Ring Deployment
