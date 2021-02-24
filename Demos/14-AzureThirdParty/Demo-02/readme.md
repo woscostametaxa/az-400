@@ -1,9 +1,3 @@
-# Ansible
+# Use Terrafrom in Pipeline
 
-[Azure Ansible](https://docs.microsoft.com/en-us/azure/developer/ansible/)
-
-Execute Playbook:
-
-```
-ansible-playbook webapp.yml
-```
+- Execute `create-tf-storage.azcli`
