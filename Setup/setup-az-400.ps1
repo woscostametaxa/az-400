@@ -18,7 +18,6 @@ choco install azurepowershell -y
 choco install microsoftazurestorageexplorer -y
 choco install azure-data-studio -y
 choco install postman -y
-choco install microsoft-teams -y
 
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
