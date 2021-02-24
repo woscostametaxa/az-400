@@ -1,5 +1,5 @@
 rnd=$RANDOM
-grp=az400-tf-$rnd
+grp=az400-m14-tf-$rnd
 loc=westeurope
 acct=tfstorage$rnd
 container="terraform"
