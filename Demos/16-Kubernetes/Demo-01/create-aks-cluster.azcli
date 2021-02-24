@@ -1,13 +1,10 @@
-rnd=$RANDOM
+rnd=007
 grp=az400-m16-aks-$rnd
 loc=westeurope
 aks=foodcluster-$rnd
 
 # Install kubectl command line client locally:
-
-az aks install-cli
-
-# You might need to set a path to your system env variables
+# az aks install-cli
 
 # Create resource group:
 
@@ -24,6 +21,10 @@ az aks get-credentials -g $grp -n $aks
 # Get a list of cluster nodes:
 
 kubectl get nodes
+
+# Create a namespace
+
+kubectl create namespace foodapp-prod
 
 # Apply the yaml - Make sure you uploaded foodui.yaml to CloudShell
 
