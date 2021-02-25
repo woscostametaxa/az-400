@@ -10,8 +10,6 @@
 
 [Puppet - CI/CD, Config Management](https://puppet.com/)
 
-[Cloud Init](https://cloud-init.io/)
-
 ## Additional Labs & Walkthroughs
 
 [Configure infrastructure in Azure Pipelines with Ansible](https://docs.microsoft.com/en-us/learn/modules/configure-infrastructure-azure-pipelines/)
