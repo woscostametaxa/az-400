@@ -1,3 +1,5 @@
 # Azure Blueprint
 
-https://docs.microsoft.com/en-us/azure/governance/blueprints/create-blueprint-portal
+[Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/)
+
+- Create and assign Blueprint from the prev demo
