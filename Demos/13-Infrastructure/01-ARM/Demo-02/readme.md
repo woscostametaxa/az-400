@@ -6,7 +6,7 @@ Deploys a given ARM Template to Azure
 
 Try it - Click the button - it should redirect to the form below
 
-![form](../_images/template-form.png)
+![form](_images/template-form.png)
 
 ## Create a "Deploy to Azure Button"
 
@@ -14,11 +14,11 @@ Try it - Click the button - it should redirect to the form below
 
 Export or Create a new ARM Template:
 
-![export](../_images/export-arm.png)
+![export](_images/export-arm.png)
 
 Get the raw path for a file use the `Raw-Button`
 
-![githubuserconent](../_images/githubusercontent.png)
+![githubuserconent](_images/githubusercontent.png)
 
 ```
 https://raw.githubusercontent.com/ARambazamba/AZ-400-V2/main/Demos/13-Infrastructure/01-ARM/Demo-02/azuredeploy.json
