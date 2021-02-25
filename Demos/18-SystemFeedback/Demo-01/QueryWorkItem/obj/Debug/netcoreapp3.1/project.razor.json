@@ -1,5 +1,5 @@
 {
-  "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\QueryWorkItem.csproj",
+  "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\QueryWorkItem.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,38 +14392,38 @@
   "RootNamespace": "QueryWorkItem",
   "Documents": [
     {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\_ViewImports.cshtml",
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\QueryWorkItem\\Views\\_ViewStart.cshtml",
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "h:\\Classes\\AZ-400-V2\\Demos\\18-SystemFeedback\\Demo-01\\QueryWorkItem\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
