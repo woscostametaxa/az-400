@@ -1,9 +1,9 @@
-# Terraform
+# Ansible
 
-[Azure Terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/)
+[Azure Ansible](https://docs.microsoft.com/en-us/azure/developer/ansible/)
+
+Execute Playbook:
 
 ```
-terraform init
-terraform plan
-terraform apply
+ansible-playbook webapp.yml
 ```

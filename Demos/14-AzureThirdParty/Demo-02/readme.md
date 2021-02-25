@@ -1,3 +1,9 @@
-# Use Terrafrom in Pipeline
+# Terraform
 
-- Execute `create-tf-storage.azcli`
+[Azure Terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/)
+
+```
+terraform init
+terraform plan
+terraform apply
+```
