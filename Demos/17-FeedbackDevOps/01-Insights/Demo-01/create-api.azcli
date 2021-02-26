@@ -1,5 +1,5 @@
 rnd=3319
-grp=az204-insights-$rnd
+grp=az400-m17-$rnd
 appPlan=insights-$rnd
 web=foodapi-$rnd
 loc=westeurope

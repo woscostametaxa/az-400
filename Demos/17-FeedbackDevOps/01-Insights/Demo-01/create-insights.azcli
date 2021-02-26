@@ -1,7 +1,9 @@
 rnd=$RANDOM
-grp=az204-insights-$rnd
+grp=az400-m17-$rnd
 loc=westeurope
 app=foodapp$rnd
+
+echo "Your random number: " $rnd
 
 az group create -n $grp -l $loc
 
