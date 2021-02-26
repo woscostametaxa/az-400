@@ -1,5 +1,20 @@
 # Scaling Git for Enterprise DevOps
 
+## Demos
+
+- Demo-01
+  - Explain Monorepo
+  - Use Gitflow
+  - Show Pull Request
+- Demo-02
+  - Azrue Devops Protection Policy
+  - Show Git Branch Protection Policy
+- Demo-3
+  - Git-Flow
+  - Forking Workflow
+
+## Readings
+
 [Handling Merge Conflicts in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol#_merge-conflicts)
 
 [Git Flow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
