@@ -4,13 +4,9 @@
 
 [DevOps Feature Timeline](https://docs.microsoft.com/en-us/azure/devops/release-notes/features-timeline)
 
-[Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/)
+[Azure Boards documentation](https://docs.microsoft.com/en-us/azure/devops/boards/?view=azure-devops)
 
-[Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-
-[Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview)
-
-[Pester](https://pester.dev/)
+[Github Project Management](https://github.com/features/project-management/)
 
 # Additional Labs & Walkthroughs
 
