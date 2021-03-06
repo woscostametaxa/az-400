@@ -2,8 +2,6 @@
 
 [Azure DevOps Process Guidance](https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process)
 
-[DevOps Feature Timeline](https://docs.microsoft.com/en-us/azure/devops/release-notes/features-timeline)
-
 [Azure Boards documentation](https://docs.microsoft.com/en-us/azure/devops/boards/?view=azure-devops)
 
 [Github Project Management](https://github.com/features/project-management/)
