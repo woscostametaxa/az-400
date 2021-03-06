@@ -2,6 +2,16 @@
 
 > Note: Originally this is Module 05
 
+## Demos
+
+- .Net 5 Build Designer
+- .Net 5 Bulid Yaml
+- .Net 5 Deployment to App Service
+- Github Service Connection
+- Azure VM as custom Build Agent
+
+## Azure DevOps CLI 
+
 [az devops](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/?view=azure-cli-latest)
 
 [az devops admin](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops?view=azure-cli-latest)
