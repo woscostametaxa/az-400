@@ -29,6 +29,8 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@yourdomain.com"
 ```
 
+> Note: On inputs without whitespaces you can leave out the quotation marks
+
 Unset Credentials
 
 ```
