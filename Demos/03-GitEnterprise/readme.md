@@ -106,7 +106,7 @@ git submodule update --remote --merge
 
 [Gitflow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
 
-> Note: Require GIT 2.24.0+ - Check with `git --version`
+> Note: Require GIT 2.24.0+ - Check with `git --version` and seperate package installation on Linux `sudo apt-get install -y git-flow`
 
 Initialize repo for gitflow:
 
