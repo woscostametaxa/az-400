@@ -2,15 +2,9 @@
 
 [Azure DevOps Process Guidance](https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process)
 
-[DevOps Feature Timeline](https://docs.microsoft.com/en-us/azure/devops/release-notes/features-timeline)
+[Azure Boards documentation](https://docs.microsoft.com/en-us/azure/devops/boards/?view=azure-devops)
 
-[Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/)
-
-[Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-
-[Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview)
-
-[Pester](https://pester.dev/)
+[Github Project Management](https://github.com/features/project-management/)
 
 # Additional Labs & Walkthroughs
 
