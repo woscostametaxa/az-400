@@ -1,9 +1,17 @@
 # Configure the Azure provider
-# https://github.com/hashicorp/terraform/issues/24200
+# might need: terraform init -upgrade
+
+terraform {
+    required_providers {
+        azurerm = {
+            source = "hashicorp/azurerm"
+            version = ">= 2.26"
+        }
+    }
+}
 
 provider "azurerm" {
-  version = "=1.44.0"
-  features {}
+    features {}
 }
 
 resource "azurerm_resource_group" "az400-m14-terraform" {

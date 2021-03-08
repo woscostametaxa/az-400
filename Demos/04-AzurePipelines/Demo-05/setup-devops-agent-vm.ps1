@@ -28,6 +28,7 @@ choco install git -y
 choco install azure-cli -y
 choco install dotnetcore-sdk -y
 choco install dotnet-5.0-sdk -y
+choco install visualstudio2019buildtools
 
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
