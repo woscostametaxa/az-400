@@ -26,7 +26,7 @@ Set User and E-Mail
 
 ```
 git config --global user.name "Your Name"
-git config --global user.email "your.email@yourdomain.com
+git config --global user.email "your.email@yourdomain.com"
 ```
 
 Unset Credentials
