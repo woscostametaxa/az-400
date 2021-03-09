@@ -1,5 +1,7 @@
 # Secure Data Solutions
 
+[Azure Thread Modeling](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-getting-started)
+
 [Azure Key Vault](https://docs.microsoft.com/de-de/azure/key-vault/general/)
 
 [Azure Managed Idntieites](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/)
