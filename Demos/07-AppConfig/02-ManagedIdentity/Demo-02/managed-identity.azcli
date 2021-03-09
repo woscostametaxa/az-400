@@ -1,5 +1,5 @@
-rnd=014
-grp=az204-secure-solutions-$rnd
+rnd=022
+grp=az400-m07-$rnd
 loc=westeurope
 identity=ua-identity-$rnd
 vm=identityvm-$rnd

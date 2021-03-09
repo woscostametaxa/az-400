@@ -1,5 +1,5 @@
-rnd=021
-grp=az204-secure-solutions-$rnd
+rnd=022
+grp=az400-m07-$rnd
 loc=westeurope
 cfg=foodconfig-$rnd
 vault=foodvault-$rnd

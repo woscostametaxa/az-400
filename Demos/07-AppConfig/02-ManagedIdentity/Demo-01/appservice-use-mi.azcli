@@ -1,5 +1,5 @@
-rnd=021
-grp=az204-secure-solutions-$rnd
+rnd=022
+grp=az400-m07-$rnd
 loc=westeurope
 vault=foodvault-$rnd
 plan=food-plan-$rnd
@@ -14,4 +14,4 @@ echo "managed identity object id: $mi"
 
 # Uses KeyVault from Demo-01
 
-az keyvault set-policy -n $vault --object-id b96ac957-7a95-49a5-96f0-c8f4d27ad7e7 --secret-permissions list get
+az keyvault set-policy -n $vault --object-id $mi --secret-permissions list get
