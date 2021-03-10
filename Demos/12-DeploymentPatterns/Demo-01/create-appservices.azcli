@@ -18,8 +18,3 @@ az webapp create -n $web-dev -g $grp -p $appPlanTest
 az webapp create -n $web-test -g $grp -p $appPlanTest
 
 az webapp create -n $web-staging -g $grp -p $appPlanProd
-
-# Deploy the app
-
-az webapp deployment slot create -n  $web-staging -g $grp --slot swap
-
