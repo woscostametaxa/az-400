@@ -188,7 +188,7 @@ In this task, you will create and publish a NuGet package.
     ./nuget.exe push -source "PartsUnlimitedShared" -ApiKey AzDO PartsUnlimited.Shared.1.0.0.nupkg
     ```
 
-> Note: ![push](images/m09/nuget-push.jpg)
+    > Note: ![push](images/m09/nuget-push.jpg)
 
 1.  Switch to the web browser window displaying the Azure DevOps portal and, in the vertical navigational pane, select **Artifacts**.
 1.  On the **Artifacts** hub pane, click the dropdown list in the upper left corner and, in the list of feeds, select the **PartsUnlimitedShared** entry.
