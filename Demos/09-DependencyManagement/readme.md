@@ -1,12 +1,12 @@
 # Dependency Management
 
+## Readings
+
 [Artifact Source Types](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/artifacts?view=azure-devops)
 
 [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider)
 
-[Multi Stage Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)
-
-[Pipeline Triggers](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml)
+[Azure Artifacts Upstream Sources](https://docs.microsoft.com/en-us/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops)
 
 [NuGet](https://www.nuget.org/)
 
