@@ -12,6 +12,8 @@
 
 [Progressively expose releases using deployment rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops)
 
+[Canary deployment strategy for Kubernetes deployments](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/canary-demo?view=azure-devops&tabs=yaml)
+
 ## Additional Labs & Walkthroughs
 
 [Walkthrough: Working with Dashboards](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/add-widget-to-dashboard?view=azure-devops)
