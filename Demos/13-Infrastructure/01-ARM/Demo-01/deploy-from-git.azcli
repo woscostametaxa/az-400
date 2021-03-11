@@ -4,4 +4,4 @@ grp=az400-m013-arm-$rnd
 
 az group create -n $grp -l $loc
 
-az deployment group create -g $grp -n storage$rnd --template-uri "https://raw.githubusercontent.com/ARambazamba/AZ-204/main/Demos/05-IaaS/02-ARM/Demo-01/azuredeploy.json"
+az deployment group create -g $grp -n storage$rnd --template-uri "https://raw.githubusercontent.com/ARambazamba/AZ-400/main/Demos/13-Infrastructure/01-ARM/Demo-01/azuredeploy.json" 
