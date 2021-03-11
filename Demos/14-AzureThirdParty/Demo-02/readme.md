@@ -2,6 +2,8 @@
 
 [Azure Terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/)
 
+[Terraform Language Documentation](https://www.terraform.io/docs/language/index.html)
+
 ```
 terraform init
 terraform plan
