@@ -1,5 +1,11 @@
 # Implementing System Feedback Mechanisms
 
+## Demos
+
+- Query Work Item for active bug
+
+## Readings
+
 [Site Reliability Engineering](https://docs.microsoft.com/en-us/azure/site-reliability-engineering/)
 
 [Feedback on product roadmap - DevOps Feature Timeline](https://docs.microsoft.com/en-us/azure/devops/release-notes/features-timeline)

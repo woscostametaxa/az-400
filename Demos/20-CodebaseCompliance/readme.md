@@ -1,5 +1,12 @@
 # Validating Code Bases for Compliance
 
+## Demos
+
+- Sonar Cloud
+- WhiteSource Bolt
+
+## Readings
+
 [Open Source Licences](https://opensource.org/licenses)
 
 [Open Web Application Security Project - OWASP](https://owasp.org/)

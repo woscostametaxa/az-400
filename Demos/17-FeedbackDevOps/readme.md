@@ -1,5 +1,13 @@
 # Implement Process for Routing System Feedback to Development Teams
 
+## Demos
+
+- Azure Monitor
+- Application Insights
+- Visual Studio App Center
+
+## Readings
+
 [Join the Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
 
 [Microsoft Teams](https://products.office.com/de-at/microsoft-teams/group-chat-software)
@@ -21,4 +29,3 @@
 [Microsoft Teams with Azure DevOps Services (Collaborate, Communicate and Celebrate)](https://azuredevopslabs.com/labs/vstsextend/teams/)
 
 [Using Microsoft Teams as Your DevOps Hub](https://azuredevopslabs.com/labs/vstsextend/teams-devopshub/)
-
