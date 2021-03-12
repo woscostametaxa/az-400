@@ -2,10 +2,12 @@
 
 Sample uses `api-whitesource.yml` from [FoodApp](https://github.com/ARambazamba/foodapp)
 
-Get Token for Service Connection:
+Result of Scan:
 
-![sonar-token](_images/sonar-token.jpg)
+![ws-dashboard](_images/ws-dashboard.jpg)
 
-Make sure you set the vars on the pipeline:
+![ws-inventory](_images/ws-inventory.jpg)
 
-![sonar-vars](_images/sonar-vars.jpg)
+![ws-vuls](_images/ws-vuls.jpg)
+
+![ws-lic](_images/ws-lic.jpg)
