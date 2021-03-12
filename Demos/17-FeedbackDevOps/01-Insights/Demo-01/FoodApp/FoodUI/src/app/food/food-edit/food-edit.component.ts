@@ -8,6 +8,7 @@ import {
 } from "@angular/core";
 import { FoodItem } from "src/app/food/food.model";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { AppInsightsService } from "../../shared/app-insights/app-insights.service";
 
 @Component({
   selector: "app-food-edit",
@@ -15,7 +16,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
   styleUrls: ["./food-edit.component.scss"],
 })
 export class FoodEditComponent implements OnInit {
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private ai: AppInsightsService) {
     this.form = this.fb.group({
       id: 0,
       name: ["", [Validators.required, Validators.minLength(3)]],
@@ -40,7 +41,7 @@ export class FoodEditComponent implements OnInit {
   }
 
   saveForm(form) {
-    console.log("food to save", form.value);
+    this.ai.logEvent("food pre-save", form.value);
     this.onSaveFood.emit(form.value);
   }
 
