@@ -19,6 +19,8 @@
 
 [Predefined Variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)
 
+[Using Expressions in Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)
+
 [Build and release retention policies](https://docs.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml)
 
 [Buildtools für Visual Studio 2019](https://visualstudio.microsoft.com/de/downloads/?rr=https%3A%2F%2Fwww.google.com%2F)
