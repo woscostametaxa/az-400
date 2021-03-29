@@ -10,7 +10,7 @@
 - Github Service Connection
 - Azure VM as custom Build Agent
 
-## Azure DevOps CLI 
+## Azure DevOps CLI
 
 [az devops](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/?view=azure-cli-latest)
 
@@ -36,7 +36,9 @@ az extension add --name azure-devops
 
 ## Extensions & Tools
 
-[Azure DevOps Pipelines - VS Code Extensions](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
+[Azure DevOps Pipelines - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
+
+[YAML - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ## Additional Labs & Walkthroughs
 
