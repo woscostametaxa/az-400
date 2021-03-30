@@ -1,4 +1,4 @@
-rnd=026
+rnd=$RANDOM
 grp=az400-foodapp
 appPlan=foodplan-$rnd
 app=foodapi-$rnd
