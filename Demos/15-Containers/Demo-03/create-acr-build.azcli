@@ -1,7 +1,7 @@
 loc=westeurope
 # Update from prev script - run from folder node-frontend
 az400-m015-4686
-acr=az400m0154686
+acr=integrationsonline.azurecr.io
 
 az acr login --name $acr
 az acr list --query "[].loginServer" -o tsv

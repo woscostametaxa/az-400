@@ -1,4 +1,4 @@
-rnd=20891
+rnd=900
 grp=az400-m17-$rnd
 appPlan=insights-$rnd
 web=foodapi-$rnd
