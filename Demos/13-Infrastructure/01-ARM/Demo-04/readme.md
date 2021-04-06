@@ -2,7 +2,7 @@
 
 [Use Azure Key Vault to pass secure parameter value during deployment](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/key-vault-parameter?tabs=azure-cli)
 
-- Create KeyVault
-- Update `azuredeploy.json` - take value from output
+- Create KeyVault using `create-arm-vault.azcli`
+- Update `azuredeploy.json` - take value from script output
 
 ![kv-ref](_images/kv-reference.jpg)
