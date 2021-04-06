@@ -1,3 +1,4 @@
-# Multistage Build Test
+# Monorepo with Vars and PathTrigger
 
-- Show pipeline `ms-build-test.yml` from [FoodApp](https://github.com/ARambazamba/FoodApp)
+- Import and show pipeline `Monorepo with Vars and PathTrigger`
+- Show pipeline `ms-template.yml` from [FoodApp](https://github.com/ARambazamba/FoodApp)

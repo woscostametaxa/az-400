@@ -5,8 +5,8 @@
 - .NET Core Build
 - .Angular Build
 - SPFx Build
-- Monorepo with Vars and PathTrigger
 - Multistage Build Test
+- Using Variables
 - Multistage with Template Yaml
 
 ## Readings
