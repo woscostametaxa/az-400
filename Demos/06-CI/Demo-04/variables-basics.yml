@@ -1,3 +1,5 @@
+name: variables basics
+
 variables:
   - name: one
     value: initialValue
