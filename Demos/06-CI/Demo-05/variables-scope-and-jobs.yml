@@ -14,9 +14,9 @@ jobs:
       - bash: echo $(job_variable1)
       - bash: echo $JOB_VARIABLE1 # variables are available in the script environment too
       - bash: echo $(changing_var)
-      - bash: echo ${{ changing_var }}
+      # - bash: echo ${{ changing_var }}
       - bash: echo $(changing_var)
-      - bash: echo ${{ changing_var }}
+      # - bash: echo ${{ changing_var }}
 
   - job: job2
     pool:
@@ -28,4 +28,4 @@ jobs:
       - bash: echo $(job_variable2)
       - bash: echo $GLOBAL_VAR
       - bash: echo $(changing_var)
-      - bash: echo ${{ changing_var }}
+      # - bash: echo ${{ changing_var }}
