@@ -1,5 +1,6 @@
+name: variables scopes and jobs
 variables:
-  global_variable: value # this is available to all jobs
+  global_variable: current-value # this is available to all jobs
 
 jobs:
   - job: job1
