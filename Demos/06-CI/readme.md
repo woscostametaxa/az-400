@@ -19,6 +19,8 @@
 
 [Predefined Variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)
 
+[Using Variables in Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch)
+
 [Using Expressions in Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)
 
 [Build and release retention policies](https://docs.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml)
