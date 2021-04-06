@@ -1,6 +1,6 @@
 rnd=$RANDOM
-grp=az400-m13-arm
 loc=westeurope
+grp=az400-m013-arm-$rnd
 vault=armvault-$rnd
 
 az group create -n $grp -l $loc
