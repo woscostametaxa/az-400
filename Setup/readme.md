@@ -16,8 +16,10 @@ pwd=Lab@dmin1233
 
 az group create -n $grp -l $loc
 
-az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image MicrosoftWindowsDesktop:Windows-10:20h2-pro:19042.746.2101092352 --size Stan
+az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd --image MicrosoftWindowsDesktop:Windows-10:20h2-pron:19042.867.2103051748 --size Stan
 ```
+
+> Note: If the image needs to be updated or is not available anymore you can list windows 10 images using: `az vm image list -f "Windows-10" --all -o table`
 
 > Note: You could also execute `create-lab-vm.sh` or run the following remote script in Cloud Shell
 

@@ -23,8 +23,6 @@
 
 [Github Pull Request and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
-[Guithub Linker](https://marketplace.visualstudio.com/items?itemName=gimenete.github-linker)
-
 ## Remotes
 
 A Remote is a GIT Repo on a Git Server, typically in the cloud, like GitHub.
@@ -45,7 +43,7 @@ git pull / git push
 
 ![forking-wf](_images/forking-workflow.jpg)
 
-Original Repo could be: `https://github.com/ARambazamba/AZ-204` where `ARambazamba` is the `original-owner-github-username` and `AZ-204` is the `reponame`
+Original Repo could be: `https://github.com/ARambazamba/AZ-400` where `ARambazamba` is the `original-owner-github-username` and `AZ-400` is the `reponame`
 
 ### Listing the current Remotes
 
@@ -62,7 +60,7 @@ Specify a new remote upstream repository that will be synced with the fork.
 ### Adding the Repo of the original owner as Upstream
 
 ```
-git remote add upstream https://github.com/original-owner-github-username/reponame.git
+git remote add upstream https://github.com/ARambazamba/AZ-400.git
 ```
 
 Verify the new upstream repository you've specified for your fork.
@@ -81,8 +79,8 @@ Fetch from Upstream:
 
 ```
  git fetch upstream
- git merge upstream/master
- git push origin master
+ git merge upstream/main
+ git push origin main
 ```
 
 ## Working with Submodules

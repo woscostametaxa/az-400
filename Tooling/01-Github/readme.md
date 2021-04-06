@@ -234,7 +234,7 @@ Specify a new remote upstream repository that will be synced with the fork.
 ### Adding the Repo of the original owner as Upstream
 
 ```
-git remote add upstream https://github.com/original-owner-github-username/reponame.git
+git remote add upstream https://github.com/ARambazamba/AZ-400.git
 ```
 
 Verify the new upstream repository you've specified for your fork.
@@ -253,8 +253,8 @@ Fetch from Upstream:
 
 ```
  git fetch upstream
- git merge upstream/master
- git push origin master
+ git merge upstream/main
+ git push origin main
 ```
 
 > Note: The branch you are pulling cloud also be `main` instead of `master`
