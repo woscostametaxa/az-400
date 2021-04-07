@@ -6,9 +6,11 @@
 
 [Azure 101 Quickstarter Templates](https://github.com/Azure/azure-quickstart-templates)
 
-[VS Code Extension: ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
-
 [Understand the structure and syntax of Azure Resource Manager templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax)
+
+## Extensions & Tools
+
+[VS Code Extension: ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
 
 ## Additional Labs & Walkthroughs
 

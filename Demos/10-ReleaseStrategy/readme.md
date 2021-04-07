@@ -8,23 +8,25 @@
 
 ## Readings
 
-[Release approvals and gates overview](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops)
-
 [Tasks](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=yaml)
 
 [Task Groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/task-groups?view=azure-devops)
 
-[Templates](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops)
+[Multi-stage pipelines user experience](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
+
+[Approval & Checks in Multistage Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
+
+[Release approvals and gates overview](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops)
+
+[Create and target an Environment](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+
+## Extensions & Tools
+
+[CronMaker](http://www.cronmaker.com/)
 
 [DevOps Extension ARM Outputs](https://marketplace.visualstudio.com/items?itemName=keesschollaart.arm-outputs)
 
 [DevOps Extension Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth)
-
-[CronMaker](http://www.cronmaker.com/)
-
-[Multi-stage pipelines user experience](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
-
-[Approval & Checks in Multistage Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
 
 ## Additional Labs & Walkthroughs
 

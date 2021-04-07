@@ -5,7 +5,7 @@
 - Deployment Tasks
 - Using Key Vault in Deployments
 - Task Groups, Templates & Deployment Groups
-- Testing
+- Implement Testing
 
 ## Readings
 
@@ -15,26 +15,9 @@
 
 [Azure 101 Quickstarter Templates](https://github.com/Azure/azure-quickstart-templates)
 
-[VS Code Extension: ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
+[Understand the structure and syntax of Azure Resource Manager (ARM) templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax)
 
-[Understand the structure and syntax of Azure Resource Manager templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax)
-
-[Azure Cloud Shell Tools](https://docs.microsoft.com/en-us/azure/cloud-shell/features)
-
-## Azure CLI
-
-[Azure CLI Documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
-
-[Azure CLI Reference](https://docs.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
-
-[Azure CLI Query](https://docs.microsoft.com/en-us/cli/azure/query-azure-cli?view=azure-cli-latest)
-
-[JMESPath Documentation](http://jmespath.org/)
-
-```bash
-az extension list-available --output table
-az extension add --name <extension-name>
-```
+[YAML Templates](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops)
 
 ## Additional Labs & Walkthroughs
 
