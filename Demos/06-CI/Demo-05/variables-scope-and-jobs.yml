@@ -27,7 +27,6 @@ stages:
 - stage: Consume
   jobs:
   - job: consuming_job
-    dependsOn: changing_job
     pool:
       vmImage: "ubuntu-16.04"
     variables:
