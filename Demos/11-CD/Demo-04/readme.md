@@ -1,3 +1,4 @@
-# Testing
+# Templates & Task Groups
 
-- Show `ms-build-test-deploy.yml` from [FoodApp Repo](https://github.com/ARambazamba/foodapp)
+- Use Taskgroup with SPFx WP
+- Show pipeline `ms-template.yml` from [FoodApp](https://github.com/ARambazamba/FoodApp)

@@ -1,5 +1,5 @@
 rnd=$RANDOM
-grp=az400-m11
+grp=az400-foodapp
 loc=westeurope
 vault=foodvault-$rnd
 
