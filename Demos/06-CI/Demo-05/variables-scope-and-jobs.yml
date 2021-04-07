@@ -2,7 +2,6 @@ name: variables scopes and jobs
 variables:
   global_var: current-value # this is available to all jobs
   changing_var: original-value
-  output_var: output-original-value
 
 stages:
 - stage: Change
@@ -19,7 +18,6 @@ stages:
         - bash: echo $(changing_var)
         - bash: |
             echo "##vso[task.setvariable variable=changing_var;]changed-value"
-            echo "##vso[task.setvariable variable=output_var;isOutput=true;]changed-output-value"
           displayName: Changing Value
         - bash: echo $(changing_var)
         - bash: echo ${{ variables.changing_var }}
@@ -37,5 +35,3 @@ stages:
       - bash: echo $GLOBAL_VAR
       - bash: echo $(changing_var)
       - bash: echo ${{ variables.changing_var }}
-      - bash: echo $(output_var)
-      - bash: echo ${{ variables.output_var }}
