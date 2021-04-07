@@ -1,5 +1,13 @@
 # Realease Strategy
 
+## Demos
+
+- .NET Core Release using Designer
+- Deployment with Stages inkluding Gates & Approvals
+- Introduction to Environments
+
+## Readings
+
 [Release approvals and gates overview](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops)
 
 [Tasks](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=yaml)

@@ -1,7 +1,5 @@
-# Deploy with Stages
+# Deployment with Stages
 
 This Demo is using https://github.com/ARambazamba/FoodApp/
 
-- Explain Triggers
-- Explain Release Gates
-- Explain Approval
+- Explain Triggers, Gates, Approvals

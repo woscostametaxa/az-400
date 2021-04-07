@@ -2,6 +2,11 @@
 
 ## Demos
 
+- Deployment Tasks
+- Using Key Vault in Deployments
+- Task Groups, Templates & Deployment Groups
+- Testing
+
 ## Readings
 
 [ARM Template Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/)

@@ -1,3 +1,3 @@
-# Simple Release
+# .NET Core Release Designer
 
-This Demo is using https://github.com/ARambazamba/FoodApp/
+Demo `FoodApi-Deployment` is deploying the .NET Core Food Api from https://github.com/ARambazamba/FoodApp/
