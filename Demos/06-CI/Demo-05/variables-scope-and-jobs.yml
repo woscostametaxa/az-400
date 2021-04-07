@@ -5,7 +5,7 @@ variables:
   output_var: output-original-value
 
 stages:
-  -stage: Change
+- stage: Change
   jobs:
     - job: changing_job
       pool:
@@ -24,19 +24,19 @@ stages:
         - bash: echo $(changing_var)
         - bash: echo ${{ variables.changing_var }}
 
-    -stage: Consume
-      jobs:
-      - job: consuming_job
-        dependsOn: changing_job
-        pool:
-          vmImage: "ubuntu-16.04"
-        variables:
-          job_variable2: value2 # this is only available in job2
-        steps:
-          - bash: echo $(global_var)
-          - bash: echo $(job_variable2)
-          - bash: echo $GLOBAL_VAR
-          - bash: echo $(changing_var)
-          - bash: echo ${{ variables.changing_var }}
-          - bash: echo $(output_var)
-          - bash: echo ${{ variables.output_var }}
+- stage: Consume
+  jobs:
+  - job: consuming_job
+    dependsOn: changing_job
+    pool:
+      vmImage: "ubuntu-16.04"
+    variables:
+      job_variable2: value2 # this is only available in job2
+    steps:
+      - bash: echo $(global_var)
+      - bash: echo $(job_variable2)
+      - bash: echo $GLOBAL_VAR
+      - bash: echo $(changing_var)
+      - bash: echo ${{ variables.changing_var }}
+      - bash: echo $(output_var)
+      - bash: echo ${{ variables.output_var }}
