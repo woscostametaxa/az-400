@@ -1,5 +1,4 @@
-# Deployment Groups
+# Deployment - Getting started
 
-- Explain Service Connections & Deployment Groups
-- Variable Groups & Linking to KeyVault Vars
-- Task Groups & Templates
+- Import `Deploy-WP-M365-CLI.json` and Deploy
+- Execute `ms-build-deploy.yml`
