@@ -1,0 +1,9 @@
+rnd=900
+grp=az400-foodapp
+loc=westeurope
+user=arambazamba
+app=foodui-staticwebsite
+
+# Set the access token for Github in terminal using: token=YOUR-TOKEN
+
+az staticwebapp create -n $app -g $grp -s https://github.com/$user/foodapp -l $loc -b main --app-location "FoodUI/" --app-artifact-location "dist/FoodUI" --token $gittoken
