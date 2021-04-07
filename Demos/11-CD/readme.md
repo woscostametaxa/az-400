@@ -3,6 +3,7 @@
 ## Demos
 
 - Deployment Tasks
+- Deployment Tasks, Environments and Variables
 - Using Key Vault in Deployments
 - Task Groups, Templates & Deployment Groups
 - Implement Testing
