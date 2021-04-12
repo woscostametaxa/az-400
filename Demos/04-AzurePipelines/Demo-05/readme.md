@@ -9,7 +9,7 @@
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-400-V2/main/Demos/04-AzurePipelines/Demo-05/setup-devops-agent-vm.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ARambazamba/AZ-400/main/Demos/04-AzurePipelines/Demo-05/setup-devops-agent-vm.ps1'))
 ```
 
 ![config-agent.jpg](_images/config-agent.jpg)
