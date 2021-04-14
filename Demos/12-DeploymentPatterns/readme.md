@@ -18,8 +18,8 @@
 
 ## Additional Labs & Walkthroughs
 
-[Walkthrough: Working with Dashboards](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/add-widget-to-dashboard?view=azure-devops)
+[Manage release cadence in Azure Pipelines by using deployment patterns](https://docs.microsoft.com/en-us/learn/modules/manage-release-cadence/)
+
+[Feature Flag Management with LaunchDarkly and AzureDevOps](https://azuredevopslabs.com/labs/vstsextend/launchdarkly/)
 
 [Manage release cadence in Azure Pipelines by using deployment patterns - Blue / Green Deployment](https://docs.microsoft.com/en-us/learn/modules/manage-release-cadence/)
-
-[Automate Docker container deployments with Azure Pipelines](https://docs.microsoft.com/en-us/learn/modules/deploy-docker/)

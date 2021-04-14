@@ -44,6 +44,4 @@
 
 [Automating Selenium Tests in Azure Pipelines](https://www.azuredevopslabs.com/labs/vstsextend/Selenium/)
 
-[Feature Flag Management with LaunchDarkly and AzureDevOps](https://azuredevopslabs.com/labs/vstsextend/launchdarkly/)
-
 [Controlling Deployments using Release Gates](https://azuredevopslabs.com/labs/vstsextend/releasegates/)
