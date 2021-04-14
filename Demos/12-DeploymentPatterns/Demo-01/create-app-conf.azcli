@@ -1,0 +1,24 @@
+rnd=022
+grp=az400-m12-$rnd
+loc=westeurope
+cfg=foodconfig-$rnd
+vault=foodvault-$rnd
+principal="http://foodprincipal"
+
+# create appconfig and add a value
+
+az group create -n $grp -l $loc
+
+az appconfig create -g $grp -n $cfg -l $loc --sku free
+
+az appconfig kv set -n foodconfig-$rnd --key "Settings:Title" --value "Fancy Food App" -y
+
+az appconfig feature set -n $cfg --feature NewAdminFeature -y
+
+az appconfig feature enable -n $cfg --feature NewAdminFeature -y
+
+# create a service principal assign permissions on keyvault
+
+az ad sp create-for-rbac -n $principal --sdk-auth
+
+az keyvault set-policy -n $vault --spn $principal --secret-permissions get list set
