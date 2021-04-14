@@ -16,9 +16,3 @@ az appconfig kv set -n foodconfig-$rnd --key "Settings:Title" --value "Fancy Foo
 az appconfig feature set -n $cfg --feature NewAdminFeature -y
 
 az appconfig feature enable -n $cfg --feature NewAdminFeature -y
-
-# create a service principal assign permissions on keyvault
-
-az ad sp create-for-rbac -n $principal --sdk-auth
-
-az keyvault set-policy -n $vault --spn $principal --secret-permissions get list set
