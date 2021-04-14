@@ -1,5 +1,5 @@
 rnd=$RANDOM
-grp=az400-T03-bluegreen-$rnd
+grp=az400-M12-bluegreen-$rnd
 loc=westeurope
 appPlanTest=bluegreenB1-$rnd
 appPlanProd=bluegreenP1V2-$rnd

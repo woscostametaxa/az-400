@@ -1,4 +1,4 @@
-rnd=022
+rnd=$RANDOM
 grp=az400-m12-$rnd
 loc=westeurope
 cfg=foodconfig-$rnd
