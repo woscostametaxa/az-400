@@ -16,6 +16,8 @@
 
 [Remedy ITSM integration](https://docs.bmc.com/docs/multicloud/enabling-prebuilt-devops-integration-between-microsoft-azure-devops-and-remedy-itsm-871492455.html)
 
+[Getting started with Kusto](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/)
+
 # Lab
 
 [Manage site reliability](https://docs.microsoft.com/en-us/learn/modules/manage-site-reliability/)
