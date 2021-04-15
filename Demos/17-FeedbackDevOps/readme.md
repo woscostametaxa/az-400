@@ -18,6 +18,8 @@
 
 [Getting started with Kusto](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/)
 
+[Stream DevOps Logs to Azure Monitor](https://docs.microsoft.com/en-us/azure/devops/organizations/audit/auditing-streaming?view=azure-devops)
+
 # Lab
 
 [Manage site reliability](https://docs.microsoft.com/en-us/learn/modules/manage-site-reliability/)
