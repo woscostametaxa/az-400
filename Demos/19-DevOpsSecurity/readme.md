@@ -8,6 +8,8 @@
 
 ## Readings
 
+[Microsoft Thread Modelling Tool](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
+
 [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/)
 
 [Azure Policy Samples](https://github.com/Azure/azure-policy)
