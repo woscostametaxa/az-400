@@ -12,7 +12,7 @@
 
 [Open Web Application Security Project - OWASP](https://owasp.org/)
 
-[OWAP Zed Attack Proxy](https://github.com/zaproxy)
+[OWASP Zed Attack Proxy](https://github.com/zaproxy)
 
 [SonarCloud](https://sonarcloud.io/)
 
