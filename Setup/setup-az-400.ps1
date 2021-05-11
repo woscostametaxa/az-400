@@ -25,6 +25,9 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # Install httprepl
 dotnet tool install -g Microsoft.dotnet-httprepl
 
+# Set Nuget 
+dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
+
 # Intall VS Code Extensions
 code --install-extension ms-dotnettools.csharp
 code --install-extension msjsdiag.debugger-for-chrome
