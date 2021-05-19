@@ -8,6 +8,8 @@
 
 [Azure App Config](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview)
 
+[Pull settings to App Configuration with Azure Pipelines](https://docs.microsoft.com/en-us/azure/azure-app-configuration/pull-key-value-devops-pipeline)
+
 ## CLI Reference
 
 [az keyvault](https://docs.microsoft.com/en-us/cli/azure/keyvault?view=azure-cli-latest)
@@ -15,6 +17,12 @@
 [az identity](https://docs.microsoft.com/en-us/cli/azure/identity?view=azure-cli-latest)
 
 [az appconfig](https://docs.microsoft.com/en-us/cli/azure/appconfig?view=azure-cli-latest)
+
+## Extensions & Tools
+
+[Azure App Configuration Pull](https://marketplace.visualstudio.com/items?itemName=AzureAppConfiguration.azure-app-configuration-task)
+
+[Azure App Configuration Push](https://marketplace.visualstudio.com/items?itemName=AzureAppConfiguration.azure-app-configuration-task-push)
 
 ## Additional Labs & Walkthroughs
 
