@@ -7,13 +7,7 @@ function Disable-InternetExplorerESC {
     Write-Host "IE Enhanced Security Configuration (ESC) has been disabled." -ForegroundColor Green
 }
 
-function InstallWebserver{
-    import-module servermanager
-    add-windowsfeature web-server -includeallsubfeature
-}
-
 Disable-InternetExplorerESC
-InstallWebserver
 
 # Install Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; 
@@ -21,27 +15,21 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Install Software
-choco install microsoft-edge -y
 choco install googlechrome -y
 choco install vscode -y
 choco install git -y
 choco install azure-cli -y
+choco install azurepowershell -y
 choco install dotnetcore-sdk -y
 choco install dotnet-5.0-sdk -y
-choco install visualstudio2019buildtools
+choco install visualstudio2019buildtools -y
+choco install nodejs-lts --version=12.18.4 -y
+choco install azure-pipelines-agent --params "'/Directory:c:\agent'" -y
 
 # Refresh Path Env for npm 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-code --install-extension ms-dotnettools.csharp
-code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension msjsdiag.debugger-for-edge
-code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode.azurecli
-code --install-extension ms-vscode.azure-account
-code --install-extension GitHub.vscode-pull-request-github
-code --install-extension redhat.vscode-yaml
-code --install-extension CoenraadS.bracket-pair-colorizer-2
-code --install-extension mdickin.markdown-shortcuts
-code --install-extension mhutchie.git-graph 
 
-# Download AzDevOps Agent from 'https://vstsagentpackage.azureedge.net/agent/2.182.1/vsts-agent-win-x64-2.182.1.zip'
+# Node based toools
+npx @angular/cli@latest analytics off
+npm i -g @angular/cli
+npm i -g gulp
