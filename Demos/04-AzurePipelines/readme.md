@@ -9,6 +9,7 @@
 -   .Net 5 Deployment to App Service
 -   Use Github Service Connection
 -   Configure a self hosted agent on an Azure Windows VM
+-   Use a container as self hosted agent (optional)
 
 ## Azure DevOps CLI
 
