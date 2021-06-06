@@ -1,0 +1,1 @@
+npm i -g @pnp/cli-microsoft365

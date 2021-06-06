@@ -1,13 +1,16 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 # To make it easier for build and release pipelines to run apt-get,
 # configure apt to not require confirmation (assume the -y argument by default)
-ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive 
+
 RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
+    wget \
+    sudo \
     jq \
     git \
     iputils-ping \
@@ -33,6 +36,13 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
     curl -LsS "$AZP_AGENTPACKAGE_URL" | tar -xz
 
 COPY ./start.sh .
+COPY installers /installers
+
+RUN /installers/netcore.sh
+RUN /installers/azurecli.sh
+RUN /installers/node.sh
+RUN /installers/m365-cli.sh
+
 RUN chmod +x start.sh
 
 ENTRYPOINT [ "./start.sh" ]

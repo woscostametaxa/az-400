@@ -8,8 +8,10 @@
 
 Build Linux Agent:
 
-```
-docker build -t linux-agent:latest
+```bash
+docker build -t azdevops-linux-agent .
+docker tag azdevops-linux-agent $dockerhubuser/$agent
+docker push $dockerhubuser/$agent
 ```
 
 Execute `use-linux-agent.azcli` to upload agent and create Container Instance. Update Environment Vars:
@@ -37,18 +39,33 @@ steps:
       displayName: "Run a multi-line script"
 ```
 
-> Note: For production you have to update the startup script to install the required software / capabilities
+To add capabilities you have to add setup scripts to `./installers` and update the `Dockerfile` to install the required software
+
+```bash
+COPY installers /installers
+
+RUN /installers/netcore.sh
+RUN /installers/azurecli.sh
+RUN /installers/node.sh
+RUN /installers/m365-cli.sh
+```
+
+[Microsoft Hosted Agents Software Inventory](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) gives you a starting point for software installed on Azure-hosted-agents
+
+![inventory](_images/inventory.png)
 
 ## Windows Agent
 
 Build Windows Agent:
 
-```
-docker build -t winagent:latest .
+```bash
+docker build -t azdevops-win-agent .
+docker tag azdevops-win-agent $dockerhubuser/$agent
+docker push $dockerhubuser/$agent
 ```
 
 Enable Windows Container Feature:
 
-```
+```Powershell
 Enable-WindowsOptionalFeature -Online -FeatureName $("Microsoft-Hyper-V", "Containers") -All
 ```
