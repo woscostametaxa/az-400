@@ -1,4 +1,4 @@
-# Use a Container Agent
+# Implement & Use a Self-hosted Docker Agent
 
 [Run a self-hosted agent in Docker](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops)
 
@@ -6,7 +6,7 @@
 
 ## Self-hosted Linux Agent
 
-To add capabilities you have to add setup scripts to `./installers` and update the `Dockerfile` to install the required software
+To add capabilities you have to add setup scripts to `./linux-agent/installers/` and update the `Dockerfile` to install the required software
 
 ```bash
 COPY installers /installers
