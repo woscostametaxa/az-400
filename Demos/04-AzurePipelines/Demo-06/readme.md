@@ -4,7 +4,22 @@
 
 [Authenticate with Azure Container Registry from Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aci)
 
-## Linux Agent
+## Self-hosted Linux Agent
+
+To add capabilities you have to add setup scripts to `./installers` and update the `Dockerfile` to install the required software
+
+```bash
+COPY installers /installers
+
+RUN /installers/netcore.sh
+RUN /installers/azurecli.sh
+RUN /installers/node.sh
+RUN /installers/m365-cli.sh
+```
+
+[Microsoft Hosted Agents Software Inventory](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) gives you a starting point for software installed on Azure-hosted-agents
+
+![inventory](_images/inventory.png)
 
 Build Linux Agent:
 
@@ -39,22 +54,7 @@ steps:
       displayName: "Run a multi-line script"
 ```
 
-To add capabilities you have to add setup scripts to `./installers` and update the `Dockerfile` to install the required software
-
-```bash
-COPY installers /installers
-
-RUN /installers/netcore.sh
-RUN /installers/azurecli.sh
-RUN /installers/node.sh
-RUN /installers/m365-cli.sh
-```
-
-[Microsoft Hosted Agents Software Inventory](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) gives you a starting point for software installed on Azure-hosted-agents
-
-![inventory](_images/inventory.png)
-
-## Windows Agent
+## Self-hosted Windows Agent
 
 Build Windows Agent:
 
