@@ -8,7 +8,7 @@ org='https://dev.azure.com/az-400-v2'
 token='d53psouao64w...'
 pool=dockerpool
 
-docker tag linux-agent $dockerhubuser/$agent
+docker tag $agent $dockerhubuser/$agent
 docker push $dockerhubuser/$agent
 
 az group create -n $grp -l $loc
