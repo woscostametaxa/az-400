@@ -6,7 +6,7 @@
 
 ## Self-hosted Linux Agent
 
-To add capabilities you have to add setup scripts to `./installers` and update the `Dockerfile` to install the required software
+To add capabilities you have to add setup scripts to `./linux-agent/installers/` and update the `Dockerfile` to install the required software
 
 ```bash
 COPY installers /installers
