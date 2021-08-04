@@ -10,7 +10,7 @@ stages:
     - bash: |
         as=appService$RANDOM
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$as"
-        echo "provisioned appservice $as
+        echo "provisioned appservice $as"
       name: setAppName
   - job: job_deploy_code
     displayName: Deploy Some Code
