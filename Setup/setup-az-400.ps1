@@ -11,6 +11,7 @@ choco install dotnetcore-sdk -y
 choco install dotnet-5.0-sdk -y
 choco install git -y
 choco install gitextensions -y
+choco install git-lfs.install -y
 choco install nodejs-lts --version=12.18.4 -y
 choco install azure-cli -y
 choco install azure-functions-core-tools-3 --params="'/x64:true'" -y

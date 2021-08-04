@@ -9,9 +9,13 @@
 - Demo-02
   - Azrue Devops Protection Policy
   - Show Git Branch Protection Policy
-- Demo-3
+- Demo-03
   - Git-Flow
   - Forking Workflow
+- Demo-04  
+  - Using Git LFS
+- Demo-05
+  - Git Hooks & GitHub Events
 
 ## Readings
 
