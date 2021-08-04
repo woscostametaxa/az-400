@@ -1,8 +1,7 @@
 name: variables scopes and jobs
 variables:
   globalvar: current-value # this is available to all jobs
-  changingvar: original-value
-  outputvar: output-original-value
+  changingvar: original-value  
 
 stages:
   - stage: Change
@@ -13,6 +12,7 @@ stages:
           vmImage: "ubuntu-20.04"
         variables:
           jobvar: value1 # this is only available in job1
+          outputvar: output-original-value
         steps:
           - bash: echo $(globalvar)
             displayName: TE globalvar
