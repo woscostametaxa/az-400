@@ -2,11 +2,11 @@
 
 [![Build Status](https://dev.azure.com/az-400-v2/M06-CI/_apis/build/status/SPFxWebPart%20Build%20Yaml?branchName=main)](https://dev.azure.com/az-400-v2/M06-CI/_build/latest?definitionId=13&branchName=main)
 
-Sample SPFx repo available [here](https://github.com/ARambazamba/SPFxPipeline)
+Sample SPFx repo available at [https://github.com/arambazamba/spfx-devops](https://github.com/arambazamba/spfx-devops)
 
 ## Scaffolding & Basics
 
-SPFx (SharePoint Framework) requires [Node 10+](https://nodejs.org/en/download/releases/), Yeoman, Gulp, SPFx Generator SharePoint
+SPFx (SharePoint Framework) requires [Node 12+](https://nodejs.org/en/download/releases/), Yeoman, Gulp, SPFx Generator SharePoint
 
 ```
 npm i -g yo gulp @microsoft/generator-sharepoint
@@ -27,5 +27,3 @@ npm i
 gulp bundle
 gulp package-solution
 ```
-
-> Note: You might have to switch to node version 10.x
