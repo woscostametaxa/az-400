@@ -6,7 +6,7 @@ variables:
 stages:
   - stage: Change
     jobs:
-      - job: changing_job
+      - job: changingjob
         displayName: Changing Job
         pool:
           vmImage: "ubuntu-20.04"
@@ -33,13 +33,13 @@ stages:
           - bash: echo ${{ variables.outputvar }}
             displayName: TE outputvar
         
-      - job: consuming_job
-        dependsOn: changing_job
+      - job: consumingjob
+        dependsOn: changingjob
         displayName: Consuming Job
         pool:
           vmImage: "ubuntu-20.04"
         variables:
-          otherjobvar: $[ dependencies.changing_job.outputs['outputvar'] ]
+          otherjobvar: $[dependencies.changingjob.outputs['outputvar']]
         steps:
             - bash: echo ${{ variables.changingvar }}
               displayName: TE changingvar
