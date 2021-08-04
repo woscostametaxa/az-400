@@ -33,11 +33,27 @@ stages:
             displayName: TE outputvar
           - bash: echo ${{ variables.outputvar }}
             displayName: TE outputvar
+        
+      - job: consuming_job
+        dependsOn: changing_job
+        displayName: Consuming Job
+        pool:
+              vmImage: "ubuntu-20.04"
+        variables:
+              otherjobvar: $[ dependencies.changing_job.outputs['outputvar'] ]
+        steps:
+            - bash: echo ${{ variables.changingvar }}
+              displayName: te changingvar
+            - bash: echo $(changingvar)
+              displayName: macro changingvar
+            - bash: echo $(outputvar)
+              displayName: macro outputvar
+            - bash: echo $(otherjobvar)
+              displayName: macro otherjobvar
 
   - stage: Consume
     jobs:
       - job: consuming_job
-        dependsOn: changing_job
         displayName: Consuming Job
         pool:
           vmImage: "ubuntu-20.04"
@@ -52,3 +68,4 @@ stages:
             displayName: macro outputvar
           - bash: echo $(otherjobvar)
             displayName: macro otherjobvar
+      - job: abc
