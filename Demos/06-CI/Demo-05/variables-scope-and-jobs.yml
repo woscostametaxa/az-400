@@ -21,4 +21,4 @@ stages:
       someName: $[ dependencies.job_deploy_infrastructure.outputs['someName'] ]
     steps: 
     - bash: |
-        "the variable value is $(someName)"
+        echo "the variable value is $(someName)"
