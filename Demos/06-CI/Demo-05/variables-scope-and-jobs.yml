@@ -2,11 +2,13 @@ name: variables scopes and jobs
 variables:
   globalvar: current-value # this is available to all jobs
   changingvar: original-value
+  outputvar: output-original-value
 
 stages:
   - stage: Change
     jobs:
       - job: changing_job
+        displayName: Changing Job
         pool:
           vmImage: "ubuntu-20.04"
         variables:
@@ -19,21 +21,34 @@ stages:
           - bash: echo $JOBVAR 
             displayName: script environment jobvar
           - bash: echo $(changingvar)
-          - bash: |
-              echo "##vso[task.setvariable variable=changingvar;]changed-in-stage-change"
-            displayName: Changing Value
+          - bash: echo "##vso[task.setvariable variable=changingvar;]changed-in-stage-change"
+            displayName: Changing Value changingvar
           - bash: echo $(changingvar)
             displayName: TE changingvar
           - bash: echo ${{ variables.changingvar }}
             displayName: TE changingvar
+          - bash: echo "##vso[task.setvariable variable=outputvar;isOutput=true;]changed-in-stage-change"
+            displayName: Changing Value outputvar
+          - bash: echo $(outputvar)
+            displayName: TE outputvar
+          - bash: echo ${{ variables.outputvar }}
+            displayName: TE outputvar
 
   - stage: Consume
     jobs:
       - job: consuming_job
+        dependsOn: changing_job
+        displayName: Consuming Job
         pool:
           vmImage: "ubuntu-20.04"
+        variables:
+          otherjobvar: $[ dependencies.changing_job.outputs['outputvar'] ]
         steps:
-          - bash: echo $(changingvar)
-            displayName: macro changingvar
           - bash: echo ${{ variables.changingvar }}
             displayName: te changingvar
+          - bash: echo $(changingvar)
+            displayName: macro changingvar
+          - bash: echo $(outputvar)
+            displayName: macro outputvar
+          - bash: echo $(otherjobvar)
+            displayName: macro otherjobvar
