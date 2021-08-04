@@ -4,46 +4,21 @@ variables:
   changingvar: original-value  
 
 stages:
-  - stage: Change
-    jobs:
-      - job: changingjob
-        displayName: Changing Job
-        pool:
-          vmImage: "ubuntu-20.04"
-        variables:
-          jobvar: value1 # this is only available in job1
-          outputvar: output-original-value
-        steps:
-          - bash: echo $(globalvar)
-            displayName: TE globalvar
-          - bash: echo $(jobvar)
-            displayName: TE jobvar
-          - bash: echo $JOBVAR 
-            displayName: script environment jobvar
-          - bash: echo "##vso[task.setvariable variable=changingvar;]changed-in-stage-change"
-            displayName: Changing Value changingvar
-          - bash: echo $(changingvar)
-            displayName: macro changingvar
-          - bash: echo ${{ variables.changingvar }}
-            displayName: TE changingvar
-          - bash: echo "##vso[task.setvariable variable=outputvar;isOutput=true;]changed-in-job"
-            displayName: Changing Value outputvar
-          - bash: echo $(outputvar)
-            displayName: macro outputvar
-          - bash: echo ${{ variables.outputvar }}
-            displayName: TE outputvar
-        
-      - job: consumingjob
-        dependsOn: changingjob
-        displayName: Consuming Job
-        pool:
-          vmImage: "ubuntu-20.04"
-        variables:
-          otherjobvar: $[dependencies.changingjob.outputs['outputvar']]
-        steps:
-            - bash: echo ${{ variables.changingvar }}
-              displayName: TE changingvar
-            - bash: echo $(changingvar)
-              displayName: macro changingvar
-            - bash: echo $(otherjobvar)
-              displayName: macro otherjobvar
+- stage: stage_deploy
+  displayName: Production
+  jobs: 
+  - job: job_deploy_infrastructure
+    displayName: Deploy Some Infrastructure
+    steps:
+    - bash: |
+        SOMEVALUE="bleh"
+        echo "##vso[task.setvariable variable=someName;isOutput=true;]$SOMEVALUE"
+        echo "variable value is $(someName)"
+  - job: job_deploy_code
+    displayName: Deploy Some Code
+    dependsOn: ['job_deploy_infrastructure']
+    variables: 
+      someName: $[ dependencies.job_deploy_infrastructure.outputs['someName'] ]
+    steps: 
+    - bash: |
+        "the variable value is $(someName)"
