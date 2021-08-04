@@ -13,7 +13,7 @@ stages:
     - bash: |
         jobval=thejobval
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$jobval"
-        echo "variable value is $(outval)"
+        echo "variable value is $(jobval)"
   - job: job_deploy_code
     displayName: Deploy Some Code
     dependsOn: ['job_deploy_infrastructure']
