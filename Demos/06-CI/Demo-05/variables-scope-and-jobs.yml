@@ -37,16 +37,14 @@ stages:
         dependsOn: changing_job
         displayName: Consuming Job
         pool:
-              vmImage: "ubuntu-20.04"
+          vmImage: "ubuntu-20.04"
         variables:
-              otherjobvar: $[ dependencies.changing_job.outputs['outputvar'] ]
+          otherjobvar: $[ dependencies.changing_job.outputs['outputvar'] ]
         steps:
             - bash: echo ${{ variables.changingvar }}
               displayName: TE changingvar
             - bash: echo $(changingvar)
               displayName: macro changingvar
-            - bash: echo $(outputvar)
-              displayName: macro outputvar
             - bash: echo $(otherjobvar)
               displayName: macro otherjobvar
 
