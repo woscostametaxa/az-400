@@ -14,7 +14,9 @@ steps:
     displayName: Set new variable value
   
   # compare template expression vs macro syntax
-  - script: |
+  - script: 
+    displayName: Output using Template Expression
       echo ${{ variables.one }} # outputs initialValue
+  - script: 
+    displayName: Output using Macro Syntax
       echo $(one) # outputs secondValue
-    displayName: Second variable pass
