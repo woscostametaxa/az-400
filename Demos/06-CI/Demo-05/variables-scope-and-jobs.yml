@@ -11,11 +11,12 @@ stages:
         jobval=thejobval
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$jobval"
         echo "variable value is $jobval"
+      name: setvartask
   - job: job_deploy_code
     displayName: Deploy Some Code
     dependsOn: ['job_deploy_infrastructure']
     variables: 
-      outval: $[ dependencies.job_deploy_infrastructure.outputs['outval'] ]
+      outval: $[ dependencies.job_deploy_infrastructure.outputs['setvartask.outval'] ]
     steps: 
     - bash: |
         echo "the variable value is" $(outval)
