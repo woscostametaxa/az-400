@@ -1,4 +1,4 @@
-name: variables scopes and jobs
+name: passing vars between jobs and stages
 
 stages:
 - stage: stageStaging
