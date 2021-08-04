@@ -32,11 +32,8 @@ stages:
       - job: consuming_job
         pool:
           vmImage: "ubuntu-20.04"
-        variables:
-          job_variable2: value2 # this is only available in job2
         steps:
-          - bash: echo $(globalvar)
-          - bash: echo $(job_variable2)
-          - bash: echo $GLOBAL_VAR
           - bash: echo $(changingvar)
+            displayName: macro changingvar
           - bash: echo ${{ variables.changingvar }}
+            displayName: te changingvar
