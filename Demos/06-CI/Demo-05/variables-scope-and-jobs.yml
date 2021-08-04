@@ -1,7 +1,4 @@
 name: variables scopes and jobs
-variables:
-  globalvar: current-value # this is available to all jobs
-  changingvar: original-value  
 
 stages:
 - stage: stage_deploy
@@ -11,7 +8,7 @@ stages:
     displayName: Deploy Some Infrastructure
     steps:
     - bash: |
-        jobval=thejobval
+        jobval="thejobval"
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$jobval"
         echo "variable value is $(jobval)"
   - job: job_deploy_code
