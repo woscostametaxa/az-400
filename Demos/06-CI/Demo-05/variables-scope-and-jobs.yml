@@ -11,14 +11,14 @@ stages:
     displayName: Deploy Some Infrastructure
     steps:
     - bash: |
-        SOMEVALUE="bleh"
-        echo "##vso[task.setvariable variable=someName;isOutput=true;]$SOMEVALUE"
-        echo "variable value is $(someName)"
+        jobval=thejobval
+        echo "##vso[task.setvariable variable=outval;isOutput=true;]$jobval"
+        echo "variable value is $(outval)"
   - job: job_deploy_code
     displayName: Deploy Some Code
     dependsOn: ['job_deploy_infrastructure']
     variables: 
-      someName: $[ dependencies.job_deploy_infrastructure.outputs['someName'] ]
+      outval: $[ dependencies.job_deploy_infrastructure.outputs['outval'] ]
     steps: 
     - bash: |
-        echo "the variable value is $(someName)"
+        echo "the variable value is $(outval)"
