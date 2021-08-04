@@ -20,17 +20,16 @@ stages:
             displayName: TE jobvar
           - bash: echo $JOBVAR 
             displayName: script environment jobvar
-          - bash: echo $(changingvar)
           - bash: echo "##vso[task.setvariable variable=changingvar;]changed-in-stage-change"
             displayName: Changing Value changingvar
           - bash: echo $(changingvar)
-            displayName: TE changingvar
+            displayName: macro changingvar
           - bash: echo ${{ variables.changingvar }}
             displayName: TE changingvar
-          - bash: echo "##vso[task.setvariable variable=outputvar;isOutput=true;]changed-in-stage-change"
+          - bash: echo "##vso[task.setvariable variable=outputvar;isOutput=true;]changed-in-job"
             displayName: Changing Value outputvar
           - bash: echo $(outputvar)
-            displayName: TE outputvar
+            displayName: macro outputvar
           - bash: echo ${{ variables.outputvar }}
             displayName: TE outputvar
         
@@ -43,7 +42,7 @@ stages:
               otherjobvar: $[ dependencies.changing_job.outputs['outputvar'] ]
         steps:
             - bash: echo ${{ variables.changingvar }}
-              displayName: te changingvar
+              displayName: TE changingvar
             - bash: echo $(changingvar)
               displayName: macro changingvar
             - bash: echo $(outputvar)
