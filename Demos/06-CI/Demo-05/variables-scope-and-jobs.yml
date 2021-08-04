@@ -18,4 +18,4 @@ stages:
       outval: $[ dependencies.job_deploy_infrastructure.outputs['outval'] ]
     steps: 
     - bash: |
-        echo "the variable value is $outval"
+        echo "the variable value is" $(outval)
