@@ -15,8 +15,8 @@ steps:
   
   # compare template expression vs macro syntax
   - script: 
-    displayName: Output using Template Expression
+    displayName: Template Expression
       echo ${{ variables.one }} # outputs initialValue
   - script: 
-    displayName: Output using Macro Syntax
+    displayName: Macro Syntax
       echo $(one) # outputs secondValue
