@@ -10,7 +10,7 @@ stages:
     - bash: |
         as=appService$RANDOM
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$as"
-        echo "provisioned appservice $as"
+        echo "provisioned appservice $as
       name: setAppName
   - job: job_deploy_code
     displayName: Deploy Some Code
@@ -27,7 +27,7 @@ stages:
     - job: job_procuction_eval
       displayName: productionEval
       variables:
-        stagingApp: $[ stageDependencies.stageStaging.job_deploy_infrastructure.outputs['setvartask.outval'] ]
+        stagingApp: $[ stageDependencies.stageStaging.job_deploy_infrastructure.outputs['setAppName.outval'] ]
       steps:
       - bash: |
           echo "the staging app is:" $(stagingApp)
