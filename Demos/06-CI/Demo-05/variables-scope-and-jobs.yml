@@ -2,13 +2,13 @@ name: variables scopes and jobs
 
 stages:
 - stage: stage_deploy
-  displayName: Production
+  displayName: Staging
   jobs: 
   - job: job_deploy_infrastructure
     displayName: Deploy Some Infrastructure
     steps:
     - bash: |
-        jobval=thejobval
+        jobval=appService$RANDOM
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$jobval"
         echo "variable value is $jobval"
       name: setvartask
