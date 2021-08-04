@@ -1,5 +1,15 @@
 # GitHub Actions
 
+## Demos
+
+- .NET Build using GitHub Action
+- Azure Static Website
+- Use GitHub Script
+
+## Readings
+
+[GitHub Marketplace](https://github.com/marketplace)
+
 [GitHub Action Docs](https://docs.github.com/en/actions)
 
 [GitHub Script](https://github.com/actions/github-script)
