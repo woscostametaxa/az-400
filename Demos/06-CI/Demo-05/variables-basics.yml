@@ -13,6 +13,7 @@ steps:
   - bash: echo '##vso[task.setvariable variable=one]secondValue'
     displayName: Set new variable value
   
+  # compare template expression vs macro syntax
   - script: |
       echo ${{ variables.one }} # outputs initialValue
       echo $(one) # outputs secondValue
