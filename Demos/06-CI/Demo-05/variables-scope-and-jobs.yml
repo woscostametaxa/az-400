@@ -1,7 +1,7 @@
 name: variables scopes and jobs
 
 stages:
-- stage: stage_deploy
+- stage: stageStaging
   displayName: Staging
   jobs: 
   - job: job_deploy_infrastructure
@@ -19,4 +19,15 @@ stages:
       outval: $[ dependencies.job_deploy_infrastructure.outputs['setvartask.outval'] ]
     steps: 
     - bash: |
-        echo "the variable value is" $(outval)
+        echo "the variable value is:" $(outval)
+
+- stage: stageProduction
+  displayName: Procuction
+  jobs:
+    - job: job_procuction_eval
+      displayName: productionEval
+      variables:
+        otherstepval: $[ stageDependencies.stageStaging.job_deploy_infrastructure.outputs['setvartask.outval'] ]
+      steps:
+      - bash: |
+          echo "the variable value from other step is:" $(otherstepval)
