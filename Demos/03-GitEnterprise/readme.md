@@ -15,7 +15,7 @@
 - Demo-04  
   - Using Git LFS
 - Demo-05
-  - GitHub Hooks
+  - Git Hooks & GitHub Events
 
 ## Readings
 
