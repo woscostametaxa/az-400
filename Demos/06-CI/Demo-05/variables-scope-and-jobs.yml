@@ -1,7 +1,7 @@
 name: variables scopes and jobs
 variables:
-  global_var: current-value # this is available to all jobs
-  changing_var: original-value
+  globalvar: current-value # this is available to all jobs
+  changingvar: original-value
 
 stages:
   - stage: Change
@@ -10,17 +10,22 @@ stages:
         pool:
           vmImage: "ubuntu-20.04"
         variables:
-          job_variable1: value1 # this is only available in job1
+          jobvar: value1 # this is only available in job1
         steps:
-          - bash: echo $(global_var)
-          - bash: echo $(job_variable1)
-          - bash: echo $JOB_VARIABLE1 # variables are available in the script environment too
-          - bash: echo $(changing_var)
+          - bash: echo $(globalvar)
+            displayName: TE globalvar
+          - bash: echo $(jobvar)
+            displayName: TE jobvar
+          - bash: echo $JOBVAR 
+            displayName: script environment jobvar
+          - bash: echo $(changingvar)
           - bash: |
-              echo "##vso[task.setvariable variable=changing_var;]changed-value"
+              echo "##vso[task.setvariable variable=changingvar;]changed-in-stage-change"
             displayName: Changing Value
-          - bash: echo $(changing_var)
-          - bash: echo ${{ variables.changing_var }}
+          - bash: echo $(changingvar)
+            displayName: TE changingvar
+          - bash: echo ${{ variables.changingvar }}
+            displayName: TE changingvar
 
   - stage: Consume
     jobs:
@@ -30,8 +35,8 @@ stages:
         variables:
           job_variable2: value2 # this is only available in job2
         steps:
-          - bash: echo $(global_var)
+          - bash: echo $(globalvar)
           - bash: echo $(job_variable2)
           - bash: echo $GLOBAL_VAR
-          - bash: echo $(changing_var)
-          - bash: echo ${{ variables.changing_var }}
+          - bash: echo $(changingvar)
+          - bash: echo ${{ variables.changingvar }}
