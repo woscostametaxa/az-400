@@ -10,8 +10,8 @@ stages:
   - job: jobone
     steps:    
     - bash: sleep 2m
-    - bash: echo 'finishing jobone at' $date
+    - bash: echo 'finishing jobone at $(date)'
   
   - job: jobtwo
     steps: 
-    - bash: echo 'finishing jobtwo at' $date
+    - bash: echo 'finishing jobtwo at $(date)'
