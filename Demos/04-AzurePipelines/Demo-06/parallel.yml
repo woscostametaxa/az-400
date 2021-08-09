@@ -9,9 +9,7 @@ stages:
   jobs: 
   - job: jobone
     steps:    
-    - task: Delay@1
-      inputs:
-        delayForMinutes: '5'    
+    - bash: sleep 2m
     - task: Bash@3
       inputs:
         targetType: 'inline'
