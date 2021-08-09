@@ -9,7 +9,7 @@ stages:
   jobs: 
   - job: jobone
     steps:    
-    - bash: sleep 2m
+    - bash: sleep 30s
     - bash: |
         now=$(date)
         echo 'finishing jobone at: ' $now
