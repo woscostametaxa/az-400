@@ -45,6 +45,8 @@ az extension add --name azure-devops
 
 [YAML - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
+[Change All End Of Line Sequence](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1448185.keyoti-changeallendoflinesequence)
+
 ## Additional Labs & Walkthroughs
 
 [Lab -Integrate Your GitHub Projects With Azure Pipelines](https://www.azuredevopslabs.com/labs/azuredevops/github-integration/)

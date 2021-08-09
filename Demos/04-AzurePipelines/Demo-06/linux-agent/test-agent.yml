@@ -2,7 +2,7 @@ trigger:
     - main
 
 pool:
-    name: dockerpool
+    name: aci-pool
 
 steps:
     - script: echo Hello, world!

@@ -39,9 +39,7 @@ COPY ./start.sh .
 COPY installers /installers
 
 RUN /installers/netcore.sh
-RUN /installers/azurecli.sh
 RUN /installers/node.sh
-RUN /installers/m365-cli.sh
 
 RUN chmod +x start.sh
 
