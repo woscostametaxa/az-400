@@ -1,0 +1,74 @@
+trigger:
+  branches:
+    include:
+    - master
+
+variables:
+  subscr: confxapp
+  functionAppName: m11funcapp-14459
+
+pool:
+  vmImage: 'ubuntu-18.04'
+
+stages:
+- stage: Build
+  displayName: Build and Provision
+  jobs:
+  - job: Build
+    displayName: Build
+
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+
+    - script: |
+        npm install
+        npm run build --if-present
+        npm run test --if-present
+      displayName: 'Prepare binaries'
+    
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: drop
+  
+  - job: Provision
+
+    steps:
+    
+    - bash: ls
+    - task: AzureCLI@2
+      displayName: 'Provision FxApp'
+      inputs:
+        azureSubscription: $(subscr)
+        scriptType: bash
+        scriptPath: '$(System.DefaultWorkingDirectory)/az-funct-app-devops/az-cli/provision.sh'
+
+- stage: Deploy
+  displayName: Deploy stage
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: Deploy
+    environment: Production
+    displayName: Deploy
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureFunctionApp@1
+            displayName: 'Azure Functions App Deploy: {{ functionAppName }}'
+            inputs:
+              azureSubscription: $(subscr)
+              appType: functionAppLinux
+              appName: $(functionAppName)
+              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
