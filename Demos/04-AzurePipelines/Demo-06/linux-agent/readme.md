@@ -26,7 +26,7 @@ This information is used to decide thich package of the agent to download and in
 AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz;
 ```
 
-To add capabilities you have to add setup scripts to `./linux-agent/installers/` and update the `Dockerfile` to install the required software
+To add capabilities you have to add setup scripts to `/installers/` and update the `Dockerfile` to install the required software
 
 ```docker
 COPY installers /installers
