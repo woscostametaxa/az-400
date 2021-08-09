@@ -2,18 +2,18 @@ name: parallel jobs
 
 stages:
 - stage: stageStaging
-  displayName: Staging
+
   jobs: 
-    - job: jobone
-      steps:
-        task: Delay@1
-        inputs:
-          delayForMinutes: '5'     
-      
-        bash: |
-          echo 'running jobone'
+  - job: jobone
+    steps:    
+    - task: Delay@1
+      inputs:
+        delayForMinutes: '5'    
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: 'echo ''job one'''
   
-    - job: jobtwo
-      steps: 
-      - bash: |
-          echo 'running jobtwo'
+  - job: jobtwo
+    steps: 
+    - bash: echo 'running jobtwo'
