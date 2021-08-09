@@ -1,16 +1,39 @@
 # Implement & Use a Self-hosted Docker Linux Agent
 
-A version of this agent is published at [https://hub.docker.com/repository/docker/arambazamba/azdevops-linux-agent](https://hub.docker.com/repository/docker/arambazamba/azdevops-linux-agent)
+A production ready version of this agent is published at [https://hub.docker.com/repository/docker/arambazamba/azdevops-linux-agent](https://hub.docker.com/repository/docker/arambazamba/azdevops-linux-agent)
 
 ## Configure Agent Container
 
-To add capabilities you have to add setup scripts to `./linux-agent/installers/` and update the `Dockerfile` to install the required software
+### Examine the dockerfile
+
+The dockerfile basically executes these steps:
+
+- Install tooling (wget, curl, ...)
+- Download `vstsagentpackage-xxx` with the default software. 
+- Execute default software installation from extracted `vstsagentpackage-xxx` using `start.sh` which executes `run.sh`
+- Add custom software using optional installer scripts
+
+The dockerfile contains the `AGENT_VERSION` which is `2.185.1` in this case. You can get the current version from the [azure-pipelines-agen](https://github.com/Microsoft/azure-pipelines-agent/releases) repo.
 
 ```bash
+ARG TARGETARCH=amd64
+ARG AGENT_VERSION=2.185.1
+
+WORKDIR /azp
+RUN if [ "$TARGETARCH" = "amd64" ]; then \
+      AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz; \
+    else \
+      AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-${TARGETARCH}-${AGENT_VERSION}.tar.gz; \
+    fi; \
+    curl -LsS "$AZP_AGENTPACKAGE_URL" | tar -xz
+```
+
+To add capabilities you have to add setup scripts to `./linux-agent/installers/` and update the `Dockerfile` to install the required software
+
+```docker
 COPY installers /installers
 
 RUN /installers/netcore.sh
-RUN /installers/azurecli.sh
 RUN /installers/node.sh
 RUN /installers/m365-cli.sh
 ```
