@@ -40,12 +40,16 @@ Build Linux Agent:
 
 ```bash
 docker build -t aciagentlinux .
-docker tag aciagentlinux arambazamba/aciagentlinux
-docker push arambazamba/aciagentlinux
 ```
 
 >Note: Local testing can be done using: `docker run -it --rm aciagentlinux -e AZP_URL=$org -e AZP_TOKEN=$token -e AZP_POOL=$pool`
 
+Upload Linux Agent:
+
+```
+docker tag aciagentlinux arambazamba/aciagentlinux
+docker push arambazamba/aciagentlinux
+```
 ## Use Container
 
 Create a custom agent pool - ie: `aci-pool`
@@ -74,6 +78,8 @@ Check if agent was registered in your DevOps orga:
 
 ## Build using Custom Agent
 
+### Functional Test
+
 Simple Agent Test `test-agent.yml`:
 
 ```yaml
@@ -93,6 +99,8 @@ steps:
       displayName: "Run a multi-line script"
 ```
 
+### .NET Core Test
+
 Test a .NET 5 Build from [https://github.com/arambazamba/simple-mvc](https://github.com/arambazamba/simple-mvc) using `test-agent-net.yml`
 
 To reference you custom pool in yaml use [pool](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/pools-queues?view=azure-devops&tabs=yaml%2Cbrowser#choosing-a-pool-and-agent-in-your-pipeline)
@@ -106,4 +114,21 @@ trigger:
 
 pool:
     name: aci-pool
+```
+
+### Microsoft 365 Stack Test
+
+This sample is using `test-agent-spfx.yml` [https://github.com/arambazamba/spfx-devops](https://github.com/arambazamba/spfx-devops/blob/main/az-pipelines/test-agent-spfx.yml)
+
+Notice the line `RUN /installers/node.sh` in `dockerfile`. It installes Node 14.x, [Gulp](https://gulpjs.com/) that is used to build a [SharePoint Framework Webpart](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview) and the [CLI for Microsoft 365](https://pnp.github.io/cli-microsoft365/) that can be used to publish this WebPart later on. By preinstalling this software you can remove the steps from your `*.yaml` and speed up your DevOps.
+
+```bash
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt install nodejs
+
+echo "NODE Version:" && node --version
+echo "NPM Version:" && npm --version
+
+sudo npm i -g gulp
+sudo npm i -g @pnp/cli-microsoft365
 ```
