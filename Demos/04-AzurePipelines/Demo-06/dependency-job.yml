@@ -1,22 +1,22 @@
 name: dependency jobs
 
+pool:
+  name: aci-pool
+
 stages:
-- stage: stageStaging
-  displayName: Staging
-  
+- stage: experiment
+
   jobs: 
-    - job: jobone
-      
-      steps:
-        task: Delay@1
-        inputs:
-          delayForMinutes: '5'     
-      
-        bash: |
-          echo 'running jobone'
+  - job: jobone
+    steps:    
+    - bash: sleep 2m
+    - bash: |
+        now=$(date)
+        echo 'finishing jobone at: ' $now
   
-    - job: jobtwo
-      dependsOn: jobone
-      steps: 
-      - bash: |
-          echo 'running jobtwo'
+  - job: jobtwo
+    dependsOn: jobone
+    steps: 
+    - bash: |
+        now=$(date)
+        echo 'finishing jobtwo at: ' $now
