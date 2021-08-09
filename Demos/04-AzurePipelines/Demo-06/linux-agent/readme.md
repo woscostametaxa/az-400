@@ -2,7 +2,7 @@
 
 A version of this agent is published at [https://hub.docker.com/repository/docker/arambazamba/azdevops-linux-agent](https://hub.docker.com/repository/docker/arambazamba/azdevops-linux-agent)
 
-## Setup Agent
+## Configure Agent Container
 
 To add capabilities you have to add setup scripts to `./linux-agent/installers/` and update the `Dockerfile` to install the required software
 
@@ -18,9 +18,25 @@ RUN /installers/m365-cli.sh
 Build Linux Agent:
 
 ```bash
-docker build -t azdevops-linux-agent .
-docker tag azdevops-linux-agent $dockerhubuser/$agent
-docker push $dockerhubuser/$agent
+docker build -t aciagentlinux .
+docker tag aciagentlinux arambazamba/aciagentlinux
+docker push arambazamba/aciagentlinux
+```
+
+## Use Container
+
+Create a custom agent pool - ie: `aci-pool`
+
+![aci-pool](_images/aci-pool.png)
+
+Get Azure DevOps token:
+
+![devops-token](_images/devops-token.png)
+
+Export token to env or add it to script:
+
+```
+export token=ae3ypool6mvpf7624it7j4smbveyrics4rnpulaqbjkeijaxl6nq
 ```
 
 Execute `creat-linux-agent-on-ci.azcli` to upload agent and create Container Instance. Update Environment Vars:
