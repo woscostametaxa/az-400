@@ -1,0 +1,22 @@
+name: dependency jobs
+
+stages:
+- stage: stageStaging
+  displayName: Staging
+  
+  jobs: 
+    - job: jobone
+      
+      steps:
+        task: Delay@1
+        inputs:
+          delayForMinutes: '5'     
+      
+        bash: |
+          echo 'running jobone'
+  
+    - job: jobtwo
+      dependsOn: jobone
+      steps: 
+      - bash: |
+          echo 'running jobtwo'
