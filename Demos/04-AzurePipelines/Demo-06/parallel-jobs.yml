@@ -13,9 +13,9 @@ stages:
           delayForMinutes: '5'     
       
         bash: |
-          echo 'running jobone'
+          echo 'finishing jobone at: ' date
   
     - job: jobtwo
       steps: 
       - bash: |
-          echo 'running jobtwo'
+          echo 'running jobtwo at: ' date
