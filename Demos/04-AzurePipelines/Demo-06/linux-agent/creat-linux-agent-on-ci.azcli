@@ -1,6 +1,6 @@
 rnd=$RANDOM
 # acr=integrationsonline
-grp=az400-m04-aciagent-$rnd
+grp=az400-aciagent-$rnd
 loc=westeurope
 img='arambazamba/aciagentlinux'
 agent=aci-linux-agent-$rnd
@@ -12,4 +12,10 @@ pool=aci-pool
 
 az group create -n $grp -l $loc
 
-az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool
+agent=aci-linux-agent-$RANDOM
+
+az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool --no-wait
+
+agent=aci-linux-agent-$RANDOM
+
+az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool --no-wait
