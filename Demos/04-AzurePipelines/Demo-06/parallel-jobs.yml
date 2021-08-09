@@ -1,21 +1,17 @@
 name: parallel jobs
 
+pool:
+  name: aci-pool
+
 stages:
 - stage: stageStaging
-  displayName: Staging
-  
+
   jobs: 
-    - job: jobone
-      
-      steps:
-        task: Delay@1
-        inputs:
-          delayForMinutes: '5'     
-      
-        bash: |
-          echo 'finishing jobone at: ' date
+  - job: jobone
+    steps:    
+    - bash: sleep 2m
+    - bash: echo 'finishing jobone at' date
   
-    - job: jobtwo
-      steps: 
-      - bash: |
-          echo 'running jobtwo at: ' date
+  - job: jobtwo
+    steps: 
+    - bash: echo 'finishing jobtwo at' date
