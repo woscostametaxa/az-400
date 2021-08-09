@@ -13,6 +13,8 @@
 
 [YAML Templates](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops)
 
+[Azure Pipelines YAML Template Samples](https://github.com/microsoft/azure-pipelines-yaml/tree/master/templates)
+
 [Deployment Jobs](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/deployment-jobs?view=azure-devops)
 
 [Deployment groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?view=azure-devops)
