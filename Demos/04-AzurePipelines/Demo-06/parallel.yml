@@ -1,5 +1,8 @@
 name: parallel jobs
 
+pool:
+  name: aci-pool
+
 stages:
 - stage: stageStaging
 
