@@ -23,6 +23,8 @@ docker tag aciagentlinux arambazamba/aciagentlinux
 docker push arambazamba/aciagentlinux
 ```
 
+>Note: Local testing can be done using: `docker run -it --rm aciagentlinux -e AZP_URL=$org -e AZP_TOKEN=$token -e AZP_POOL=$pool`
+
 ## Use Container
 
 Create a custom agent pool - ie: `aci-pool`
@@ -36,14 +38,20 @@ Get Azure DevOps token:
 Export token to env or add it to script:
 
 ```
-export token=ae3ypool6mvpf7624it7j4smbveyrics4rnpulaqbjkeijaxl6nq
+export token=ae3ypool6mvpf7624it7j4smbveyrics4rnpu...
 ```
 
 Execute `creat-linux-agent-on-ci.azcli` to upload agent and create Container Instance. Update Environment Vars:
 
 ```bash
-az container create -g $grp -l $loc -n $agent --image $dockerhubuser/$agent --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'='shlinuxagent' 'AZP_POOL'=$pool
+az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool
 ```
+
+Check if agent was registered in your DevOps orga:
+
+![agent-up](_images/agent-up.png)
+
+## Build using Custom Agent
 
 Simple Agent Test `test-agent.yml`:
 
@@ -52,7 +60,7 @@ trigger:
     - main
 
 pool:
-    name: dockerpool
+    name: aci-pool
 
 steps:
     - script: echo Hello, world!
@@ -62,4 +70,19 @@ steps:
           echo Add other tasks to build, test, and deploy your project.
           echo See https://aka.ms/yaml
       displayName: "Run a multi-line script"
+```
+
+Test a .NET 5 Build from [https://github.com/arambazamba/simple-mvc](https://github.com/arambazamba/simple-mvc) using `test-agent-net.yml`
+
+To reference you custom pool in yaml use [pool](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/pools-queues?view=azure-devops&tabs=yaml%2Cbrowser#choosing-a-pool-and-agent-in-your-pipeline)
+
+```
+name: test-agent-net
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+    name: aci-pool
 ```

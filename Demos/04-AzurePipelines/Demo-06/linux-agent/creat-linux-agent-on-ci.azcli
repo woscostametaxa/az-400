@@ -6,8 +6,8 @@ img='arambazamba/aciagentlinux'
 agent=aci-linux-agent-$rnd
 # update org name
 org='https://dev.azure.com/az-400-v2'
-# replace the token
-# token=ae3ypool6mvpf7624it7j4smbveyrics4rnpulaqbjkeijaxl6nq
+# replace the token and uncomment if you have not exported the token to bash
+# token=ae3ypool6mvpf7624it7j4smbveyrics4rnpul...
 pool=aci-pool
 
 az group create -n $grp -l $loc

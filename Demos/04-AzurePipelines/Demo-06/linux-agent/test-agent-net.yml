@@ -1,11 +1,11 @@
-name: "build-simple-net-core-api-yaml"
+name: test-agent-net
 trigger:
   branches:
     include:
       - master
 
 pool:
-    name: dockerpool
+    name: aci-pool
 
 variables:
   buildConfiguration: "Release"
