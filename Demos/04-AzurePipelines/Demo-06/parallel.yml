@@ -10,11 +10,14 @@ stages:
   - job: jobone
     steps:    
     - bash: sleep 2m
+      displayName: sleeping 2 min
     - task: Bash@3
       inputs:
         targetType: 'inline'
         script: 'echo ''job one'''
+      displayName: finish jobone
   
   - job: jobtwo
     steps: 
     - bash: echo 'running jobtwo'
+    displayName: finish jobtwo
