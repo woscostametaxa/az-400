@@ -1,5 +1,11 @@
 # Azure Automation
 
+- Chocolatey
+- Automation Account and Runbooks
+- Desired State Configuration
+
+## Readings
+
 [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-intro)
 
 [Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/site/search?f[0].Type=RootCategory&f[0].Value=WindowsAzure&f[1].Type=SubCategory&f[1].Value=WindowsAzure_automation&f[1].Text=Automation)

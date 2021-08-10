@@ -1,5 +1,11 @@
 ## Azure CLI
 
+- Simple Azure CLI Script
+- Use Azure CLI Task in Pipeline Designer
+- Using Arguments in CLI Task
+
+## Readings
+
 [Azure Cloud Shell Tools](https://docs.microsoft.com/en-us/azure/cloud-shell/features)
 
 [Azure CLI Documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
