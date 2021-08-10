@@ -2,8 +2,8 @@
 
 - Manual ARM Deployment with local File and from Git
 - Deploy to Azue Button
-- Use AzureResourceManagerTemplateDeployment in Designer pipeline
-- Use AzureResourceManagerTemplateDeployment in yaml pipeline
+- Use AzureResourceManagerTemplateDeployment Task in Designer pipeline
+- Use AzureResourceManagerTemplateDeployment Task in yaml pipeline
 - Use Secrets in ARM Deployment
 
 ## Readings
@@ -16,7 +16,7 @@
 
 [Understand the structure and syntax of Azure Resource Manager templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax)
 
-[AzureResourceManagerTemplateDeployment](https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/cd/azure/deploy-arm-template?view=azure-devops#create-your-pipeline-and-deploy-your-template)
+[AzureResourceManagerTemplateDeployment Task](https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/cd/azure/deploy-arm-template?view=azure-devops#create-your-pipeline-and-deploy-your-template)
 
 ## Extensions & Tools
 
