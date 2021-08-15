@@ -1,7 +1,7 @@
 rnd=$RANDOM
 loc=westeurope
-grp=az400-m013-arm-$rnd
+grp=az400-m13-$rnd
 
 az group create -n $grp -l $loc
 
-az deployment group create -g $grp -n storage$rnd --template-uri "https://raw.githubusercontent.com/ARambazamba/AZ-400/main/Demos/13-Infrastructure/01-ARM/Demo-01/azuredeploy.json" 
+az deployment group create -g $grp -n fooddeployment$rnd --template-uri "https://raw.githubusercontent.com/arambazamba/az-400/master/Demos/13-Infrastructure/01-ARM/Demo-01/api-azuredeploy.json" --parameters webapp='foodapi-090' serviceplan='foodplan-090'

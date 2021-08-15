@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAcctName": {
-      "defaultValue": "demostorageap",
+      "defaultValue": "[concat('az400demo', substring(uniqueString(resourceGroup().id),0,6))]",
       "type": "String"
     }
   },

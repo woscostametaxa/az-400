@@ -1,6 +1,10 @@
 # Deploy to Azure Button
 
-Deploys a given ARM Template to Azure
+Deploys a given ARM Template to Azure. Note the random default value:
+
+```
+"defaultValue": "[concat('az400demo', substring(uniqueString(resourceGroup().id),0,6))]",
+```
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FARambazamba%2FAZ-400-V2%2Fmain%2FDemos%2F13-Infrastructure%2F01-ARM%2FDemo-02%2Fazuredeploy.json)
 
