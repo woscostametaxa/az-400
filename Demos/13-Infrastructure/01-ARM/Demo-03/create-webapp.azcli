@@ -1,7 +1,7 @@
 rnd=$RANDOM
 grp=az400-m13-arm-$rnd
-plan=mvc-armservice-$rnd
-app=mvc-armapp-$rnd
+plan=api-armserviceplan-$rnd
+app=api-armapp-$rnd
 loc=westeurope
 
 # create a resource group
