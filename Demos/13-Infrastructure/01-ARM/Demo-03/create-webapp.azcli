@@ -15,4 +15,4 @@ az webapp create -n $app -g $grp --plan $plan
 
 # print out the FQDN for the Web App
 echo "Use this number for your Deploy Pipeline: $rnd"
-echo "Web Url: http://$web.azurewebsites.net"
+echo "Web Url: http://$app.azurewebsites.net"
