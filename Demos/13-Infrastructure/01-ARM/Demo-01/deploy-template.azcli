@@ -1,6 +1,6 @@
 rnd=$RANDOM
 loc=westeurope
-grp=az400-m013-arm-$rnd
+grp=az400-m13-arm-$rnd
 acctname=armstorage$rnd
 
 # Upload azuredeploy.json to Cloud Shell or ls ...
