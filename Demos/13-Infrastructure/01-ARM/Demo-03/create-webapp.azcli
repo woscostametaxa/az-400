@@ -1,17 +1,17 @@
 rnd=$RANDOM
 grp=az400-m13-arm-$rnd
-appPlan=arm-$rnd
-web=mvc-arm-$rnd
+plan=mvc-armservice-$rnd
+app=mvc-armapp-$rnd
 loc=westeurope
 
 # create a resource group
 az group create -n $grp -l $loc
 
 # create an App Service plan
-az appservice plan create -n $appPlan -g $grp --sku FREE
+az appservice plan create -n $plan -g $grp --sku FREE
 
 # create a Web App
-az webapp create -n $web -g $grp --plan $appPlan
+az webapp create -n $app -g $grp --plan $plan
 
 # print out the FQDN for the Web App
 echo "Use this number for your Deploy Pipeline: $rnd"
