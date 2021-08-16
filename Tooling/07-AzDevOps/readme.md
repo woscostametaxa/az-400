@@ -11,3 +11,5 @@ Please provide the name of the DevOps Organisation that should be enabled.
 You can check the grant at: `https://dev.azure.com/DEVOPS-ORGA/_settings/buildqueue?_a=concurrentJobs`
 
 ![free-jobs](_images/free-jobs.png)
+
+>Note: As an alternative you can use your own Azure Hosted Agents which will be covered in Module 04
