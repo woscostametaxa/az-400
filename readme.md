@@ -3,6 +3,7 @@
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
 - [Requirements / Tooling](./Tooling)
+  - [Register Azure DevOps Organisation](./Tooling/07-AzDevOps)
   - [Register Azure Pass](./Tooling/05-AzurePass)
   - [Git & GitHub Basics](./Tooling/01-Github)
   - [Visual Studio Code Intro](./Tooling/02-VSCode)
