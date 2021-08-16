@@ -4,7 +4,6 @@
 
 - Demo-01
   - Explain Monorepo
-  - Use Gitflow
   - Show Pull Request
 - Demo-02
   - Azrue Devops Protection Policy
