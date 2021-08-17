@@ -10,6 +10,7 @@ stages:
     - bash: |
         as=appService$RANDOM
         echo "##vso[task.setvariable variable=outval;isOutput=true;]$as"
+        echo "##vso[task.setvariable variable=outvalb;isOutput=true;]true"
         echo "provisioned appservice $as"
       name: mockProvisioning
   - job: job_deploy_code
@@ -28,6 +29,10 @@ stages:
       displayName: productionEval
       variables:
         stagingApp: $[ stageDependencies.stageStaging.job_deploy_infrastructure.outputs['mockProvisioning.outval'] ]
+        other: $[ stageDependencies.stageStaging.job_deploy_infrastructure.outputs['mockProvisioning.outvalb'] ]
       steps:
       - bash: |
           echo "the staging app is:" $(stagingApp)
+      - bash: |
+          echo "Something is set to something"
+        condition: (eq($(other),"true"))
