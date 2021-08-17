@@ -13,9 +13,7 @@
 
 ## Azure DevOps CLI
 
-[az devops](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/?view=azure-cli-latest)
-
-[az devops admin](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops?view=azure-cli-latest)
+[az devops](https://docs.microsoft.com/en-us/cli/azure/devops?view=azure-cli-latest)
 
 Install Azure DevOps Extension:
 
@@ -24,6 +22,8 @@ az extension add --name azure-devops
 ```
 
 ## Build Pipelines
+
+[Azure DevOps Services REST API Reference](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.1)
 
 [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
 
