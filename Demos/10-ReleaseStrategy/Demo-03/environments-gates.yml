@@ -11,14 +11,14 @@ stages:
       name: mockBuild
 
 - stage: deploy
-  displayName: Deploy
+  displayName: Deploy  
   jobs:
-    - job: deploy_job
-      displayName: Mock deploy job
-      environment: Production
-      strategy:
-        runOnce:
-          deploy:
-            steps:
-            - script: echo 'mocking deployment'
-              name: mockDeployment
+    -  deployment: DeployWeb
+       displayName: Mock deploy job
+       environment: Production
+       strategy:
+          runOnce:
+            deploy:
+              steps:
+              - script: echo 'mocking deployment'
+                name: mockDeployment
