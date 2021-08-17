@@ -1,0 +1,24 @@
+name: environments-gates
+
+stages:
+- stage: build
+  displayName: Build
+  jobs: 
+  - job: build_job
+    displayName: Mock build job
+    steps:
+    - bash: echo 'mocking build'
+      name: mockBuild
+
+- stage: deploy
+  displayName: Deploy
+  jobs:
+    - job: deploy_job
+      displayName: Mock deploy job
+      environment: Production
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - script: echo 'mocking deployment'
+              name: mockDeployment
