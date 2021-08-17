@@ -5,9 +5,9 @@
 - .NET Core Build
 - .Angular Build
 - SPFx Build
-- Multistage Build Test
 - Using Variables
 - Multistage with Template Yaml
+- Passing Variables to Jobs & Stages
 
 ## Readings
 
