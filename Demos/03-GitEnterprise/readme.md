@@ -20,6 +20,8 @@
 
 [Handling Merge Conflicts in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol#_merge-conflicts)
 
+[Improve code quality with branch policies](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops)
+
 [Git Flow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
 
 ## Extensions & Tools
