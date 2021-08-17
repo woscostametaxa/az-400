@@ -1,5 +1,3 @@
-# Monorepo with Vars and PathTrigger
+# Multistage with Template Yaml
 
-- Import and show pipeline `Monorepo with Vars and PathTrigger`
-- Explain variables, scopes and lifetime using `variables-basics.yml` and `variables-scope-and-jobs.yml`
-- Show pipeline `ms-template.yml` from [FoodApp](https://github.com/ARambazamba/FoodApp)
+- Show pipeline `api-template.yml` from [FoodApp](https://github.com/arambazamba/FoodApp/blob/master/az-pipelines/api-template.yml)
