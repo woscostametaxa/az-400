@@ -1,6 +1,7 @@
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
+    // Mocking use of Az DevOps REST Api https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.1 or any other source
     const succeed = req.body && req.body.succeed;
    
     if(succeed==true){
