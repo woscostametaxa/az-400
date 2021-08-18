@@ -35,4 +35,4 @@ stages:
           echo "the staging app is:" $(stagingApp)
       - bash: |
           echo "Something is set to something"
-        condition: eq(variables['other'],"true")
+        condition: eq(variables['other'],'true')
